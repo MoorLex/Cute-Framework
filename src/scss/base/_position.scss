@@ -1,0 +1,39 @@
+//
+// Position
+
+$positions: relative, absolute;
+
+@each $pos in $positions {
+  @include media-target(p-#{$pos}) { position: $pos; }
+}
+
+.fixed-top, .fixed-bottom {
+  left: 0;
+  right: 0;
+  z-index: 100;
+  position: fixed;
+}
+
+.fixed-top {
+  top: 0;
+}
+
+.fixed-bottom {
+  bottom: 0;
+}
+
+.sticky-top {
+  @supports (position: sticky) {
+    top: 0;
+    z-index: 100;
+    position: sticky;
+  }
+}
+
+.sticky-bottom {
+  @supports (position: sticky) {
+    bottom: 0;
+    z-index: 100;
+    position: sticky;
+  }
+}

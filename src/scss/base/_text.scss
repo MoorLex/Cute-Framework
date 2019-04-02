@@ -1,0 +1,31 @@
+//
+// Text
+
+$aligns: left , right , center, justify;
+
+@each $align in $aligns {
+  @include media-target(text-#{$align}) { text-align: $align; }
+}
+
+.text-nowrap { white-space: nowrap; }
+.text-lowercase  { text-transform: lowercase; }
+.text-uppercase  { text-transform: uppercase; }
+.text-capitalize { text-transform: capitalize; }
+
+.text-white { color: #fff; }
+.text-muted { color: #7a7a7a; }
+.text-dark { color: #3e3e3e; }
+.text-black { color: #212121; }
+
+.text-hide {
+  color: transparent !important;
+}
+
+.font-light { font-weight: lighter; }
+.font-normal { font-weight: normal; }
+.font-bold { font-weight: bold; }
+.font-italic { font-style: italic; }
+
+.no-select {
+  user-select: none;
+}
