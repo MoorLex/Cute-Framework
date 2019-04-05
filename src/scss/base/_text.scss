@@ -12,10 +12,31 @@ $aligns: left , right , center, justify;
 .text-uppercase { text-transform: uppercase; }
 .text-capitalize { text-transform: capitalize; }
 
-.text-white { color: #fff; }
-.text-muted { color: #7a7a7a; }
-.text-dark { color: #3e3e3e; }
-.text-black { color: #212121; }
+$colors: (
+  primary: $blue,
+  danger: $red,
+  warning: $yellow,
+  success: $green,
+  info: $cyan,
+  white: $white,
+  muted: $muted,
+  darker: $darker,
+  dark: $dark,
+  light: $light,
+  lighter: $lighter,
+  black: #212121
+);
+
+@each $color, $value in $colors {
+
+  .text-#{$color} { color: $value; }
+
+  a.text-#{$color} {
+    color: $value;
+
+    &:hover, &:focus { color: darken($value, 10%); }
+  }
+}
 
 .text-hide {
   color: transparent !important;
@@ -29,3 +50,4 @@ $aligns: left , right , center, justify;
 .no-select {
   user-select: none;
 }
+

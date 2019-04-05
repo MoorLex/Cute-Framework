@@ -15,6 +15,7 @@ $opacity: (
 
 @each $key, $val in $opacity {
   .overlay-#{$key}{
+    z-index: 1;
     position: relative;
 
     &:before {
@@ -23,6 +24,7 @@ $opacity: (
       right: 0;
       bottom: 0;
       content: '';
+      z-index: -1;
       opacity: #{$val};
       background: #000;
       position: absolute;
@@ -38,6 +40,7 @@ $opacity: (
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
     opacity: 1;
     content: '';
     background: #000;

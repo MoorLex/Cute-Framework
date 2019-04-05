@@ -1,6 +1,6 @@
 # Meow.css
 
-> Meow meow meowmeow meow meowmeow meowmeowmeow meow meow!
+> Responsive based modern css framework!
 
 ## Build Setup
 

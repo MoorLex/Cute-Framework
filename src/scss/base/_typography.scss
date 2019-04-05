@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 body{
-  color: #212121;
+  color: $black;
   font-size: 1em;
   line-height: 2;
   font-weight: 400;
@@ -65,15 +65,19 @@ h5, .h5 { font-size: 1em; }
 h6, .h6 { font-size: .8em; }
 
 a{
-  color: #719ad0;
+  color: $blue;
   text-decoration: none;
 
   &:hover, &:focus{
-    color: #5877a2;
+    color: darken($blue, 10%);
     text-decoration: none;
   }
 }
 
 p{
   margin-bottom: 1rem;
+}
+
+small, .small{
+  font-size: 12px;
 }

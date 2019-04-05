@@ -1,0 +1,33 @@
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4),
+  7: ($spacer * 5),
+  8: ($spacer * 6),
+  9: ($spacer * 7),
+  10: ($spacer * 8)
+);
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+    @include media-target(#{$abbrev}-#{$size}) { #{$prop}: $length; }
+    @include media-target(#{$abbrev}t-#{$size}) { #{$prop}-top: $length; }
+    @include media-target(#{$abbrev}b-#{$size}) { #{$prop}-bottom: $length; }
+    @include media-target(#{$abbrev}l-#{$size}) { #{$prop}-left: $length; }
+    @include media-target(#{$abbrev}r-#{$size}) { #{$prop}-right: $length; }
+
+    @include media-target(#{$abbrev}x-#{$size}) {
+      #{$prop}-left: $length;
+      #{$prop}-right: $length;
+    }
+
+    @include media-target(#{$abbrev}y-#{$size}) {
+      #{$prop}-top: $length;
+      #{$prop}-bottom: $length;
+    }
+  }
+}
