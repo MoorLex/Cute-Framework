@@ -1,5 +1,5 @@
 <template>
-  <div class="admin-page bg-lighter" :class="{'side-menu-mini': mini}">
+  <div class="admin-page bg-lighter" :class="{'side-menu-mini': side_mini}">
 
     <div class="side-menu bg-dark">
 
@@ -14,15 +14,48 @@
       </nav>
     </div>
 
+    <div class="overlay-menu" :class="{'show': overlay_show}">
+
+      <div class="overlay-header d-flex p-3">
+        <span class="btn bg-white p-0 ml-auto btn-sm" @click="overlay_show = false"><i class="i-close"></i></span>
+      </div>
+
+      <div class="card">
+
+        <div class="card-media">
+          <div class="r-1x1" style="background-image: url('https://images.pexels.com/photos/1902647/pexels-photo-1902647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
+        </div>
+
+        <div class="card-body pb-0">
+          <p class="h3 font-bold mb-0">Crocodile</p>
+        </div>
+
+        <nav class="nav flex-column">
+          <span class="nav-text text-muted"><i class="i-user"></i> <span>Author</span></span>
+          <span class="nav-text text-muted"><i class="i-cloud"></i> <span>12 Mb</span></span>
+        </nav>
+
+        <div class="card-body">
+          <span class="btn d-block bg-light">Upload archive</span>
+        </div>
+      </div>
+
+      <nav class="nav mt-3 flex-column mt-auto">
+        <a href="#" class="nav-link text-muted"><i class="i-download"></i> <span>Download</span></a>
+        <span class="nav-link text-muted"><i class="i-eye"></i> <span>Make visible</span></span>
+        <span class="nav-link bg-danger"><i class="i-trash"></i> <span>Remove</span></span>
+      </nav>
+    </div>
+
     <div class="navbar py-3 sticky-top bg-white">
       <div class="container-fluid">
 
-        <button class="btn bg-light p-0 mr-auto" @click="mini = !mini"><i class="i-menu-simple"></i></button>
+        <span class="btn bg-light p-0 mr-auto" @click="side_mini = !side_mini"><i class="i-menu-simple"></i></span>
 
         <div class="navbar-group md-down:d-none">
 
-          <button class="btn bg-light p-0"><i class="i-bell"></i></button>
-          <button class="btn bg-light p-0 ml-2"><i class="i-user"></i></button>
+          <span class="btn bg-light p-0"><i class="i-bell"></i></span>
+          <span class="btn bg-light p-0 ml-2"><i class="i-user"></i></span>
         </div>
       </div>
     </div>
@@ -43,14 +76,13 @@
 
               <div class="card-header">
 
-
                 <nav class="nav ml-auto">
                   <span class="btn bg-white p-0"><i class="i-eye"></i></span>
                   <span class="btn bg-white p-0"><i class="i-close"></i></span>
                 </nav>
               </div>
 
-              <div class="card-media">
+              <div class="card-media cursor-pointer" @click="overlay_show = true">
                 <div class="r-1x1" style="background-image: url('https://images.pexels.com/photos/1902647/pexels-photo-1902647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
               </div>
 
@@ -76,7 +108,8 @@
     name: 'HomePage',
     data () {
       return {
-        mini: false
+        side_mini: false,
+        overlay_show: false
       }
     },
     components: {

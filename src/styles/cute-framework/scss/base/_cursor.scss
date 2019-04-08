@@ -1,0 +1,9 @@
+//
+// Cursor
+
+$cursors: (pointer, cell, alias, grab, grabbing, copy, crosshair, default, text, help, wait, progress, not-allowed,
+  e-resize, w-resize, n-resize, s-resize, ew-resize, ns-resize);
+
+@each $prop in ($cursors) {
+  .cursor-#{$prop}{ cursor: #{$prop}; }
+}

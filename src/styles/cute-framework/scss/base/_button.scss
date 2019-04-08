@@ -29,6 +29,8 @@
   &.btn-rounded{
     border-radius: 40px;
   }
+
+  i{ width: 16px; }
 }
 
 //
@@ -43,9 +45,8 @@
     padding-left: $spacer + 5px;
     padding-right: $spacer + 5px;
 
-    &.btn-rounded{
-      border-radius: 50px;
-    }
+    &.btn-rounded{ border-radius: 50px; }
+    i{ width: 18px; }
   }
 
   &.btn-sm{
@@ -55,9 +56,8 @@
     padding-left: $spacer;
     padding-right: $spacer;
 
-    &.btn-rounded{
-      border-radius: 30px;
-    }
+    &.btn-rounded{ border-radius: 30px; }
+    i{ width: 14px; }
   }
 
   &.btn-xs{
@@ -69,9 +69,8 @@
     padding-left: $spacer - 5px;
     padding-right: $spacer - 5px;
 
-    &.btn-rounded{
-      border-radius: 24px;
-    }
+    &.btn-rounded{ border-radius: 24px; }
+    i{ width: 10px; }
   }
 }
 
@@ -165,6 +164,13 @@
     color: fade_out(#3e3e3e, .1);
 
     &:hover, &:focus { color: #3e3e3e; background: #dedfe3; }
+  }
+
+  &.bg-muted{
+    background: $muted;
+    color: fade_out(#fff, .1);
+
+    &:hover, &:focus { color: #fff; background: #636b72; }
   }
 
   &.bg-dark{

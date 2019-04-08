@@ -58,3 +58,28 @@ body{
     }
   }
 }
+
+.overlay-menu{
+  right: 0;
+  top: 70px;
+  width: 400px;
+  z-index: 100;
+  display: flex;
+  position: fixed;
+  transition: .3s;
+  background: #fff;
+  overflow-y: auto;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+  transform: translateX(100%);
+  box-shadow: 0 0 0 fade_out(#000, 1);
+
+  &.show{
+    transform: translateX(0);
+    box-shadow: 0 0 20px fade_out(#000, .9);
+  }
+
+  .card{
+    box-shadow: none;
+  }
+}

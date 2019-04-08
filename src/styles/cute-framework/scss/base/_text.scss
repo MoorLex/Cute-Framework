@@ -37,7 +37,9 @@ $colors: (
   }
 }
 
-a.text-muted {
+.text-muted { color: $muted; }
+
+a.text-muted{
   color: $muted;
 
   &:hover, &:focus { color: lighten($muted, 10%); }
