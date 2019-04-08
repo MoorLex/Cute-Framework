@@ -1,0 +1,39 @@
+.nav{
+  display: flex;
+
+  .nav-link{
+    border: none;
+    cursor: pointer;
+    max-width: 100%;
+    min-width: 40px;
+    transition: .3s;
+    box-shadow: none;
+    user-select: none;
+    line-height: 40px;
+    font-size: inherit;
+    white-space: nowrap;
+    font-family: inherit;
+    letter-spacing: .5px;
+    display: inline-block;
+    padding-left: $spacer;
+    vertical-align: unset;
+    padding-right: $spacer;
+
+    [class*="i-"]{
+      width: 15px;
+      font-size: 15px;
+      text-align: center;
+      line-height: unset;
+      display: inline-block;
+
+      &.float-right{
+        margin-left: $spacer;
+      }
+
+      &:not(.float-right){
+        float: left;
+        margin-right: $spacer;
+      }
+    }
+  }
+}

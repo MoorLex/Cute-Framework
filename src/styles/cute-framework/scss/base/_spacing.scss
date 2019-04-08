@@ -1,0 +1,47 @@
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4),
+  7: ($spacer * 5),
+  8: ($spacer * 6),
+  9: ($spacer * 7),
+  10: ($spacer * 8)
+);
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+    @include media-target(#{$abbrev}-#{$size}) { #{$prop}: $length !important; }
+    @include media-target(#{$abbrev}t-#{$size}) { #{$prop}-top: $length !important; }
+    @include media-target(#{$abbrev}b-#{$size}) { #{$prop}-bottom: $length !important; }
+    @include media-target(#{$abbrev}l-#{$size}) { #{$prop}-left: $length !important; }
+    @include media-target(#{$abbrev}r-#{$size}) { #{$prop}-right: $length !important; }
+
+    @include media-target(#{$abbrev}x-#{$size}) {
+      #{$prop}-left: $length !important;
+      #{$prop}-right: $length !important;
+    }
+
+    @include media-target(#{$abbrev}y-#{$size}) {
+      #{$prop}-top: $length !important;
+      #{$prop}-bottom: $length !important;
+    }
+  }
+
+  @each $dir, $abb in (top: t, bottom: b, left: l, right: r){
+    @include media-target(#{$abbrev}#{$abb}-auto) { #{$prop}-#{$dir}: auto !important; }
+  }
+
+  @include media-target(#{$abbrev}x-auto) {
+    #{$prop}-left: auto !important;
+    #{$prop}-right: auto !important;
+  }
+
+  @include media-target(#{$abbrev}y-auto) {
+    #{$prop}-top: auto !important;
+    #{$prop}-bottom: auto !important;
+  }
+}

@@ -1,0 +1,184 @@
+//
+// Buttons
+
+.btn{
+  border: none;
+  color: $muted;
+  cursor: pointer;
+  max-width: 100%;
+  min-width: 40px;
+  transition: .3s;
+  box-shadow: none;
+  user-select: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: inherit;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-family: inherit;
+  letter-spacing: .5px;
+  display: inline-block;
+  padding-left: $spacer;
+  vertical-align: unset;
+  padding-right: $spacer;
+
+  &:hover, &:focus{
+    color: $black;
+  }
+
+  &.btn-rounded{
+    border-radius: 40px;
+  }
+}
+
+//
+// Button sizes
+
+.btn{
+
+  &.btn-lg{
+    min-width: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: $spacer + 5px;
+    padding-right: $spacer + 5px;
+
+    &.btn-rounded{
+      border-radius: 50px;
+    }
+  }
+
+  &.btn-sm{
+    min-width: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: $spacer;
+    padding-right: $spacer;
+
+    &.btn-rounded{
+      border-radius: 30px;
+    }
+  }
+
+  &.btn-xs{
+    min-width: 24px;
+    font-size: 10px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: $spacer - 5px;
+    padding-right: $spacer - 5px;
+
+    &.btn-rounded{
+      border-radius: 24px;
+    }
+  }
+}
+
+//
+// Button colors
+
+.btn{
+
+  &.text-primary{
+    color: $blue;
+
+    &:hover, &:focus { color: $blue-dark }
+  }
+
+  &.text-warning{
+    color: $yellow;
+
+    &:hover, &:focus { color: $yellow-dark; }
+  }
+
+  &.text-success{
+    color: $green;
+
+    &:hover, &:focus { color: $green-dark; }
+  }
+
+  &.text-info{
+    color: $cyan;
+
+    &:hover, &:focus { color: $cyan-dark; }
+  }
+
+  &.text-danger{
+    color: $red;
+
+    &:hover, &:focus { color: $red-dark; }
+  }
+
+  &.text-light{
+    color: $lighter;
+
+    &:hover, &:focus { color: #dedfe3; }
+  }
+
+  &.text-dark{
+    color: $dark;
+
+    &:hover, &:focus { color: #4f5a68; }
+  }
+}
+
+.btn{
+
+  &.bg-primary{
+    background: $blue;
+    color: fade_out(#fff, .1);
+
+    &:hover, &:focus { color: #fff; background: $blue-dark; }
+  }
+
+  &.bg-warning{
+    background: $yellow;
+    color: fade_out(#fff, .1);
+
+    &:hover, &:focus { color: #fff; background: $yellow-dark; }
+  }
+
+  &.bg-success{
+    background: $green;
+    color: fade_out(#fff, .1);
+
+    &:hover, &:focus { color: #fff; background: $green-dark; }
+  }
+
+  &.bg-info{
+    background: $cyan;
+    color: fade_out(#fff, .1);
+
+    &:hover, &:focus { color: #fff; background: $cyan-dark; }
+  }
+
+  &.bg-danger{
+    background: $red;
+    color: fade_out(#fff, .1);
+
+    &:hover, &:focus { color: #fff; background: $red-dark; }
+  }
+
+  &.bg-light{
+    background: $lighter;
+    color: fade_out(#3e3e3e, .1);
+
+    &:hover, &:focus { color: #3e3e3e; background: #dedfe3; }
+  }
+
+  &.bg-dark{
+    background: $dark;
+    color: fade_out(#fff, .1);
+
+    &:hover, &:focus { color: #fff; background: #4f5a68; }
+  }
+
+  &.bg-white{
+    background: #fff;
+    color: fade_out(#3e3e3e, .1);
+
+    &:hover, &:focus { color: #3e3e3e; background: $lighter; }
+  }
+}
+

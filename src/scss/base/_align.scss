@@ -1,8 +1,0 @@
-//
-// Align
-
-$aligns: baseline, top, middle, bottom, text-bottom, text-top;
-
-@each $align in $aligns {
-  @include media-target(align-#{$align}) { display: $align; }
-}

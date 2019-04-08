@@ -1,0 +1,60 @@
+body{
+  font-size: 16px;
+  cursor: default;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.admin-page{
+  transition: .3s;
+  position: relative;
+  padding-left: 320px;
+
+  &.side-menu-mini{
+    padding-left: 70px;
+
+    .side-menu{
+      width: 70px;
+
+      .nav{
+
+        .nav-link{
+          padding: 0 25px;
+
+          span{
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.side-menu{
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  transition: .3s;
+
+  .menu-header{
+    height: 70px;
+    background: fade_out(#000, .7);
+  }
+
+  .nav{
+    align-items: center;
+
+    .nav-link{
+      width: 100%;
+      overflow: hidden;
+
+      span{
+        opacity: 1;
+        transition: .3s;
+      }
+    }
+  }
+}

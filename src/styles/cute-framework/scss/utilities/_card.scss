@@ -1,0 +1,30 @@
+.card{
+  background: #fff;
+  box-shadow: 0 0 5px fade_out(#000, .9);
+
+  .card-header{
+    padding: 5px;
+    display: flex;
+
+    .btn{
+      min-width: 30px;
+      font-size: 14px;
+      line-height: 30px;
+      padding-left: $spacer;
+      padding-right: $spacer;
+    }
+  }
+
+  .card-media{
+    width: 100%;
+    display: block;
+  }
+
+  .card-body{
+    padding: $spacer;
+  }
+
+  .card-list{}
+
+  .card-list{}
+}

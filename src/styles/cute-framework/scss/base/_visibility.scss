@@ -1,0 +1,6 @@
+//
+// Visibility
+
+@each $prop in (visible, hidden) {
+  @include media-target($prop) { visibility: $prop; }
+}

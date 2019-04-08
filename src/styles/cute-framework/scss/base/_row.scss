@@ -1,0 +1,37 @@
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-left: -$spacer;
+  margin-right: -$spacer;
+
+  &.no-gutters{
+    .col, [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .col, [class*="col-"]{
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    min-height: 1px;
+    position: relative;
+    padding-left: $spacer;
+    padding-right: $spacer;
+  }
+
+  @include media-target(order-first) { order: -1; }
+  @include media-target(order-last) { order: $grid-columns + 1; }
+
+  @for $i from 1 through $grid-columns {
+
+    @include media-target(order-#{$i}) { order: $i; }
+    @include media-target(col-#{$i}) {
+      flex: 0 0 percentage($i / $grid-columns);
+      max-width: percentage($i / $grid-columns);
+    }
+  }
+}

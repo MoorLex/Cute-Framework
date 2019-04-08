@@ -1,0 +1,8 @@
+//
+// Display
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex;
+
+@each $display in $displays {
+  @include media-target(d-#{$display}) { display: $display !important; }
+}
