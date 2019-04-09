@@ -125,17 +125,50 @@ body{
   }
 
   .card{
+
+    &.block-hover{
+      .card-media{
+        margin: 0 -2px;
+      }
+    }
+
     .media-icon{
       width: 100px;
       height: 100px;
       font-size: 30px;
       border-radius: 50%;
       line-height: 100px;
-      animation: fade 1s ease-in-out infinite alternate;
+      animation: spin 2s ease-in-out infinite;
 
       i{
         width: 30px;
       }
+    }
+  }
+
+  .block-hover{
+    background: #fff;
+    border: 2px solid transparent;
+
+    &:hover{
+      border-color: #ddd;
+    }
+  }
+
+  .small-card{
+    line-height: 1;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+
+    .bg-muted{ transition: opacity .3s; }
+
+    &:hover{
+      .bg-muted{ opacity: .6; }
+    }
+
+    .count, .icon{
+      font-size: 30px;
     }
   }
 }

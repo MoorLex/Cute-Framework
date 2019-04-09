@@ -75,6 +75,91 @@
     <section class="py-5">
       <div class="container">
 
+        <div class="row mb-4">
+
+          <div class="sm-down:col-12 md:col-6 lg-up:col-3 mb-3">
+            <div class="card small-card">
+              <div class="card-body py-0">
+                <div class="row text-center">
+
+                  <div class="col xs:col-12 lg:col-12 py-4 bg-muted text-lighter content-center">
+                    <i class="i-users icon"></i>
+                  </div>
+
+                  <div class="col xs:col-12 lg:col-12 py-4 py-4">
+                    <p class="font-bold mb-1 count">123</p>
+                    <span class="text-muted">users</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm-down:col-12 md:col-6 lg-up:col-3 mb-3">
+            <div class="card small-card">
+              <div class="card-body py-0">
+                <div class="row text-center">
+
+                  <div class="col xs:col-12 lg:col-12 py-4 bg-muted text-lighter content-center">
+                    <i class="i-layers icon"></i>
+                  </div>
+
+                  <div class="col xs:col-12 lg:col-12 py-4 py-4">
+                    <p class="font-bold mb-1 count">123</p>
+                    <span class="text-muted">rounds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm-down:col-12 md:col-6 lg-up:col-3 mb-3">
+            <div class="card small-card">
+              <div class="card-body py-0">
+                <div class="row text-center">
+
+                  <div class="col xs:col-12 lg:col-12 py-4 bg-muted text-lighter content-center">
+                    <i class="i-package icon"></i>
+                  </div>
+
+                  <div class="col xs:col-12 lg:col-12 py-4 py-4">
+                    <p class="font-bold mb-1 count">123</p>
+                    <span class="text-muted">models</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm-down:col-12 md:col-6 lg-up:col-3 mb-3">
+            <div class="card small-card">
+              <div class="card-body py-0">
+                <div class="row text-center">
+
+                  <div class="col xs:col-12 lg:col-12 py-4 bg-muted text-lighter content-center">
+                    <i class="i-folder icon"></i>
+                  </div>
+
+                  <div class="col xs:col-12 lg:col-12 py-4">
+                    <p class="font-bold mb-1 count">123</p>
+                    <span class="text-muted">Groups</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-5" v-for="item in 4">
+            <span class="btn d-block text-left block-hover">
+              <i class="i-folder-solid float-left opacity-50"></i>
+              <span>Folder name</span>
+            </span>
+          </div>
+        </div>
+
         <div class="row">
 
           <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-5" v-for="item in 4">
@@ -88,10 +173,10 @@
                 </nav>
               </div>
 
-              <div class="card-media" @click="overlay_show = true">
+              <div class="card-media">
                 <div class="r-1x1">
                   <div class="content-center p-absolute w-fill h-fill">
-                    <span class="media-icon btn bg-light btn-rounded p-0 cursor-default"><i class="i-cloud"></i></span>
+                    <span class="media-icon btn bg-light p-0 cursor-default"><i class="i-folder"></i></span>
                   </div>
                 </div>
               </div>
@@ -106,10 +191,13 @@
 
         <div class="row">
 
-          <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-5" v-for="item in 12">
-            <div class="card rounded">
+          <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-5" v-for="i in 12">
+            <div class="card rounded block-hover">
 
               <div class="card-header">
+                <nav class="nav">
+                  <span class="btn bg-white p-0" @click="setTarget(i)"><i :class="isTarget(i) ? 'i-circle-solid text-light' : 'i-circle'"></i></span>
+                </nav>
 
                 <nav class="nav ml-auto">
                   <span class="btn bg-white p-0"><i class="i-eye"></i></span>
@@ -139,9 +227,19 @@
     data () {
       return {
         side_mini: false,
+        targets: [],
         overlay_show: false
       }
     },
-    components: {}
+    methods: {
+
+      setTarget(index) {
+        this.targets.push(index);
+      },
+
+      isTarget(index) {
+        return this.targets.includes(index);
+      },
+    }
   }
 </script>
