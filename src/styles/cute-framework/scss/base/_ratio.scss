@@ -1,6 +1,12 @@
 //
 // Ratio
 
+@include media-target(r-9x21) { padding-bottom: 233.33%; }
+@include media-target(r-9x16) { padding-bottom: 177.77%; }
+@include media-target(r-10x16) { padding-bottom: 160%; }
+@include media-target(r-2x3) { padding-bottom: 150%; }
+@include media-target(r-3x4) { padding-bottom: 133.33%; }
+@include media-target(r-5x4) { padding-bottom: 125%; }
 @include media-target(r-1x1) { padding-bottom: 100%; }
 @include media-target(r-5x4) { padding-bottom: 80%; }
 @include media-target(r-4x3) { padding-bottom: 75%; }
