@@ -72,7 +72,7 @@
       </div>
     </header>
 
-    <section class="py-5">
+    <section class="pt-5">
       <div class="container">
 
         <div class="row mb-4">
@@ -218,6 +218,18 @@
         </div>
       </div>
     </section>
+
+    <nav class="nav page-nav justify-content-center py-5">
+      <span class="btn btn-sm bg-light p-0"><i class="i-chevron-left"></i></span>
+      <span class="btn btn-sm bg-light sm-down:d-none">1</span>
+      <span class="btn btn-sm bg-light p-0 events-disable">...</span>
+      <span class="btn btn-sm bg-light">6</span>
+      <span class="btn btn-sm bg-light active">7</span>
+      <span class="btn btn-sm bg-light">8</span>
+      <span class="btn btn-sm bg-light p-0 events-disable">...</span>
+      <span class="btn btn-sm bg-light sm-down:d-none">100</span>
+      <span class="btn btn-sm bg-light p-0"><i class="i-chevron-right"></i></span>
+    </nav>
   </div>
 </template>
 
