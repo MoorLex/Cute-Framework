@@ -3,7 +3,7 @@
 
     <section class="bg-dark h-screen content-center text-lighter mb-5">
       <div class="container">
-        <h1 class="mb-0">Meow.css</h1>
+        <h1 class="mb-0">Cute Framework</h1>
         <p>Responsive based css framework</p>
       </div>
     </section>
