@@ -50,3 +50,7 @@ template {
 [hidden] {
   display: none !important;
 }
+
+.events-disable{
+  pointer-events: none !important;
+}

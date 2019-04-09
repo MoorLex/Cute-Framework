@@ -13,8 +13,27 @@ $opacity: (
   90: .9
 );
 
-@each $key, $val in $opacity {
-  .overlay-#{$key}{
+$colors: (
+  primary: $blue,
+  primary-dark: $blue-dark,
+  danger: $red,
+  danger-dark: $red-dark,
+  warning: $yellow,
+  warning-dark: $yellow-dark,
+  success: $green,
+  success-dark: $green-dark,
+  info: $cyan,
+  info-dark: $cyan-dark,
+  white: $white,
+  darker: $darker,
+  dark: $dark,
+  light: $light,
+  lighter: $lighter,
+  black: #212121
+);
+
+@each $prop, $abb in $opacity {
+  .overlay-#{$prop}{
     z-index: 1;
     position: relative;
 
@@ -25,9 +44,17 @@ $opacity: (
       bottom: 0;
       content: '';
       z-index: -1;
-      opacity: #{$val};
+      opacity: #{$abb};
       background: #000;
       position: absolute;
+    }
+  }
+}
+
+@each $prop, $abb in $colors {
+  .overlay-#{$prop}{
+    &:before {
+      background: #{$abb};
     }
   }
 }
@@ -43,7 +70,7 @@ $opacity: (
     z-index: 1;
     opacity: 1;
     content: '';
-    background: #000;
     position: absolute;
+    background: fade_out(#000, .5);
   }
 }

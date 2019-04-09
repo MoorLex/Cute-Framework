@@ -1,0 +1,28 @@
+.form-control{
+  width: 100%;
+  border: none;
+  color: #212112;
+  font-size: 14px;
+  transition: .3s;
+  font-weight: 500;
+  box-shadow: unset;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: $lighter;
+
+  &:not(textarea){
+    height: 40px;
+  }
+
+  &:focus{
+    outline: none;
+    background: #dedfe3;
+  }
+}
+
+textarea.form-control{
+  padding-top: 10px;
+  font-family: inherit;
+  padding-bottom: 10px;
+}

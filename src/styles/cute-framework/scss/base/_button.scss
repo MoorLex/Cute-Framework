@@ -7,16 +7,16 @@
   cursor: pointer;
   max-width: 100%;
   min-width: 40px;
+  font-size: 14px;
   transition: .3s;
+  font-weight: 600;
   box-shadow: none;
   user-select: none;
   line-height: 40px;
   text-align: center;
-  font-size: inherit;
   border-radius: 5px;
   white-space: nowrap;
   font-family: inherit;
-  letter-spacing: .5px;
   display: inline-block;
   padding-left: $spacer;
   vertical-align: unset;
@@ -40,7 +40,7 @@
 
   &.btn-lg{
     min-width: 50px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 50px;
     padding-left: $spacer + 5px;
     padding-right: $spacer + 5px;
@@ -51,7 +51,7 @@
 
   &.btn-sm{
     min-width: 30px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px;
     padding-left: $spacer;
     padding-right: $spacer;
