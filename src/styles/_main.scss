@@ -127,6 +127,8 @@ body{
   .card{
 
     &.block-hover{
+      transition: border .3s;
+
       .card-media{
         margin: 0 -2px;
       }

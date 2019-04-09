@@ -150,9 +150,9 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-4">
 
-          <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-5" v-for="item in 4">
+          <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-3" v-for="item in 4">
             <span class="btn d-block text-left block-hover">
               <i class="i-folder-solid float-left opacity-50"></i>
               <span>Folder name</span>
@@ -162,7 +162,7 @@
 
         <div class="row">
 
-          <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-5" v-for="item in 4">
+          <div class="sm-down:col-12 md:col-4 lg-up:col-3 mb-5" v-for="item in 4">
             <div class="card rounded">
 
               <div class="card-header">
@@ -191,7 +191,7 @@
 
         <div class="row">
 
-          <div class="xs:col-12 sm:col-6 md:col-4 lg-up:col-3 mb-5" v-for="i in 12">
+          <div class="sm-down:col-12 md:col-4 lg-up:col-3 mb-5" v-for="i in 12">
             <div class="card rounded block-hover">
 
               <div class="card-header">
