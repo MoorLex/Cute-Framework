@@ -1,7 +1,7 @@
 <br>
 <br>
 <p align="center">
-    <img src="https://raw.githubusercontent.com/MoorLex/Cute-Framework/master/dist/logo.svg" alt="Cute Framework logo" width="100" height="100">
+    <img src="https://user-images.githubusercontent.com/20378514/55952557-9487f800-5c62-11e9-8ce3-b145b9182c74.png" alt="Cute Framework logo" width="100" height="100">
 </p>
 <h3 align="center">Cute Framework</h3>
 <p align="center">
