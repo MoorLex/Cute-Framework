@@ -1,14 +1,34 @@
 {
   "name": "cute-framework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Responsive based css framework",
-  "main": "src/cute.scss",
+  "style": "dist/css/cute.css",
+  "sass": "src/cute.scss",
   "scripts": {
     "build": "gulp scss",
     "dev": "gulp scss:watch"
   },
   "author": "Alex Moore <moorlex@mail.com>",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoorLex/Cute-Framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MoorLex/Cute-Framework/issues"
+  },
+  "files": [
+    "dist/{css}/*.{css,map}",
+    "src/**/*.scss"
+  ],
   "devDependencies": {
     "css-mqpacker": "^7.0.0",
     "gulp": "^4.0.0",
