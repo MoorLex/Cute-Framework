@@ -1,5 +1,8 @@
 <br>
 <br>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/MoorLex/Cute-Framework/master/dist/logo.svg" alt="Cute Framework logo" width="100" height="100">
+</p>
 <h3 align="center">Cute Framework</h3>
 <p align="center">
   <a href="https://github.com/MoorLex/Cute-Framework/tree/master/docs"><strong>Открыть документацию »</strong></a>
