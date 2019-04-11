@@ -5,9 +5,9 @@
 <br>
 <br>
 
-- [Макет](https://github.com/MoorLex/Cute-Framework/docs/layout.md)
-- [Сетка](https://github.com/MoorLex/Cute-Framework/docs/grid.md)
-- [Типография](https://github.com/MoorLex/Cute-Framework/docs/typography.md)
+- [Макет](https://github.com/MoorLex/Cute-Framework/tree/master/docs/layout.md)
+- [Сетка](https://github.com/MoorLex/Cute-Framework/tree/master/docs/grid.md)
+- [Типография](https://github.com/MoorLex/Cute-Framework/tree/master/docs/typography.md)
 
 <!-- 
 - [Фон](https://github.com/MoorLex/Cute-Framework/docs/background.md)

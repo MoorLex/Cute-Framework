@@ -2,7 +2,7 @@
 <br>
 <h3 align="center">Cute Framework</h3>
 <p align="center">
-  <a href="https://github.com/MoorLex/Cute-Framework/docs/"><strong>Открыть документацию »</strong></a>
+  <a href="https://github.com/MoorLex/Cute-Framework/tree/master/docs"><strong>Открыть документацию »</strong></a>
 </p>
 <br>
 <br>
