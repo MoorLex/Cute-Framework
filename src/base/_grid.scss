@@ -2,8 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin-left: -$spacer;
-  margin-right: -$spacer;
 
   &.no-gutters{
     .col, [class*="col-"] {
@@ -33,5 +31,12 @@
       flex: 0 0 percentage($i / $grid-columns);
       max-width: percentage($i / $grid-columns);
     }
+  }
+}
+
+.container, .container-fluid {
+  .row{
+    margin-left: -$spacer;
+    margin-right: -$spacer;
   }
 }

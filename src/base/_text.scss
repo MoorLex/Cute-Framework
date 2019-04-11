@@ -31,28 +31,19 @@ $colors: (
   .text-#{$color} { color: $value; }
 
   a.text-#{$color} {
-    color: $value;
-
     &:hover, &:focus { color: darken($value, 10%); }
   }
 }
 
-.text-muted { color: $muted; }
+.text-muted { opacity: .5 }
 
 a.text-muted{
-  color: $muted;
-
-  &:hover, &:focus { color: lighten($muted, 10%); }
+  &:hover, &:focus { opacity: .8 }
 }
 
 .text-hide {
   color: transparent !important;
 }
-
-.font-light { font-weight: lighter; }
-.font-normal { font-weight: normal; }
-.font-bold { font-weight: bold; }
-.font-italic { font-style: italic; }
 
 .no-select {
   user-select: none;

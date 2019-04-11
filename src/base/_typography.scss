@@ -16,8 +16,12 @@ b, strong, .bold{
   font-weight: bold;
 }
 
-em, .italic{
+em, .em .italic{
   font-style: italic;
+}
+
+u, .u .underline{
+  text-decoration: underline;
 }
 
 mark, .mark{
@@ -26,7 +30,7 @@ mark, .mark{
   background-color: #fcf8e3;
 }
 
-del, .delete{
+del, .del, .delete{
   text-decoration: line-through;
 }
 
