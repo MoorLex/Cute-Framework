@@ -81,24 +81,27 @@
 @mixin media-target($name) {
   .#{$name} { @content }
 
-  @each $breakpoint in map-keys($grid-breakpoints) {
+  @if $static {}
+  @else {
+    @each $breakpoint in map-keys($grid-breakpoints) {
 
-    @include media-breakpoint-up($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-      @if $breakpoint != xs { [class *="#{$breakpoint}-up:#{$name}"]{ @content } }
-    }
+        @if $breakpoint != xs { [class *="#{$breakpoint}-up:#{$name}"]{ @content } }
+      }
 
-    @include media-breakpoint-down($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      @include media-breakpoint-down($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-      @if $breakpoint != xl { [class *="#{$breakpoint}-down:#{$name}"]{ @content } }
-    }
+        @if $breakpoint != xl { [class *="#{$breakpoint}-down:#{$name}"]{ @content } }
+      }
 
-    @include media-breakpoint-only($breakpoint) {
-      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      @include media-breakpoint-only($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-      [class *="#{$breakpoint}:#{$name}"]{ @content }
+        [class *="#{$breakpoint}:#{$name}"]{ @content }
+      }
     }
   }
 }

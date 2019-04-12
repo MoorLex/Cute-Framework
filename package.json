@@ -1,6 +1,6 @@
 {
   "name": "cute-framework",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Responsive based css framework",
   "style": "dist/css/cute.css",
   "sass": "src/cute.scss",
@@ -34,8 +34,10 @@
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-css-comments": "^2.0.0",
     "node-sass": "^4.11.0"
   }
 }
