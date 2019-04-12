@@ -2,5 +2,5 @@
 // Layers
 
 @for $i from 1 through 9 {
-  @include media-target(z-#{$i}) { z-index: $i*100; }
+  @include media-target(z-#{$i}) { z-index: $i*100 !important; }
 }
