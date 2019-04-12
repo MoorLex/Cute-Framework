@@ -14,26 +14,20 @@ $positions: relative, absolute;
   position: fixed;
 }
 
-.fixed-top {
-  top: 0;
-}
+.fixed-top { top: 0; }
+.fixed-bottom { bottom: 0; }
 
-.fixed-bottom {
-  bottom: 0;
+.sticky-top, .sticky-bottom {
+  @supports (position: sticky) {
+    z-index: 100;
+    position: sticky;
+  }
 }
 
 .sticky-top {
-  @supports (position: sticky) {
-    top: 0;
-    z-index: 100;
-    position: sticky;
-  }
+  @supports (position: sticky) { top: 0; }
 }
 
 .sticky-bottom {
-  @supports (position: sticky) {
-    bottom: 0;
-    z-index: 100;
-    position: sticky;
-  }
+  @supports (position: sticky) { bottom: 0; }
 }

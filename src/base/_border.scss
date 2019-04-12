@@ -20,9 +20,6 @@
 //
 // Border-radius
 
-.rounded {
-  border-radius: 4px;
-}
 .rounded-top {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -40,10 +37,6 @@
   border-bottom-left-radius: 4px;
 }
 
-.rounded-circle {
-  border-radius: 50%;
-}
-
-.rounded-0 {
-  border-radius: 0;
-}
+.rounded { border-radius: 4px; }
+.rounded-full { border-radius: 50%; }
+.rounded-0 { border-radius: 0; }

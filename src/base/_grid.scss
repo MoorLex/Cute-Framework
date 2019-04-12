@@ -27,6 +27,7 @@
   @for $i from 1 through $grid-columns {
 
     @include media-target(order-#{$i}) { order: $i; }
+
     @include media-target(col-#{$i}) {
       flex: 0 0 percentage($i / $grid-columns);
       max-width: percentage($i / $grid-columns);
