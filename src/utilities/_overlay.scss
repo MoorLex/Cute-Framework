@@ -35,7 +35,7 @@ $colors: (
 @each $prop, $abb in $opacity {
   .overlay-#{$prop}{
     &:before {
-      opacity: #{$abb};
+      opacity: #{$abb} !important;
     }
   }
 }
@@ -43,7 +43,7 @@ $colors: (
 @each $prop, $abb in $colors {
   .overlay-#{$prop}{
     &:before {
-      background: #{$abb};
+      background: #{$abb} !important;
     }
   }
 }
