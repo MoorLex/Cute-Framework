@@ -34,19 +34,8 @@ $colors: (
 
 @each $prop, $abb in $opacity {
   .overlay-#{$prop}{
-    z-index: 1;
-    position: relative;
-
     &:before {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: '';
-      z-index: -1;
       opacity: #{$abb};
-      background: #000;
-      position: absolute;
     }
   }
 }
@@ -59,7 +48,7 @@ $colors: (
   }
 }
 
-.overlay{
+.overlay, [class*="overlay-"]{
   position: relative;
 
   &:before {

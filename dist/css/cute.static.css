@@ -422,6 +422,16 @@ template {
     color: #333333; }
   .btn.btn-rounded {
     border-radius: 40px; }
+  .btn.btn-disabled, .btn[disabled] {
+    pointer-events: none; }
+    .btn.btn-disabled:after, .btn[disabled]:after {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      background: rgba(255, 255, 255, 0.5); }
   .btn i {
     width: 16px;
     text-align: center;
@@ -1751,10 +1761,10 @@ a.text-black:hover, a.text-black:focus {
   color: #080808; }
 
 .text-muted {
-  opacity: .5; }
+  opacity: .7; }
 
 a.text-muted:hover, a.text-muted:focus {
-  opacity: .8; }
+  opacity: .9; }
 
 .text-hide {
   color: transparent !important; }
@@ -2014,131 +2024,32 @@ small, .small {
   .card .card-body {
     padding: 15px; }
 
-.overlay-10 {
-  z-index: 1;
-  position: relative; }
-  .overlay-10:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.1;
-    background: #000;
-    position: absolute; }
+.overlay-10:before {
+  opacity: 0.1; }
 
-.overlay-20 {
-  z-index: 1;
-  position: relative; }
-  .overlay-20:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.2;
-    background: #000;
-    position: absolute; }
+.overlay-20:before {
+  opacity: 0.2; }
 
-.overlay-30 {
-  z-index: 1;
-  position: relative; }
-  .overlay-30:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.3;
-    background: #000;
-    position: absolute; }
+.overlay-30:before {
+  opacity: 0.3; }
 
-.overlay-40 {
-  z-index: 1;
-  position: relative; }
-  .overlay-40:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.4;
-    background: #000;
-    position: absolute; }
+.overlay-40:before {
+  opacity: 0.4; }
 
-.overlay-50 {
-  z-index: 1;
-  position: relative; }
-  .overlay-50:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.5;
-    background: #000;
-    position: absolute; }
+.overlay-50:before {
+  opacity: 0.5; }
 
-.overlay-60 {
-  z-index: 1;
-  position: relative; }
-  .overlay-60:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.6;
-    background: #000;
-    position: absolute; }
+.overlay-60:before {
+  opacity: 0.6; }
 
-.overlay-70 {
-  z-index: 1;
-  position: relative; }
-  .overlay-70:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.7;
-    background: #000;
-    position: absolute; }
+.overlay-70:before {
+  opacity: 0.7; }
 
-.overlay-80 {
-  z-index: 1;
-  position: relative; }
-  .overlay-80:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.8;
-    background: #000;
-    position: absolute; }
+.overlay-80:before {
+  opacity: 0.8; }
 
-.overlay-90 {
-  z-index: 1;
-  position: relative; }
-  .overlay-90:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    z-index: -1;
-    opacity: 0.9;
-    background: #000;
-    position: absolute; }
+.overlay-90:before {
+  opacity: 0.9; }
 
 .overlay-primary:before {
   background: #5995ed; }
@@ -2188,9 +2099,9 @@ small, .small {
 .overlay-black:before {
   background: #212121; }
 
-.overlay {
+.overlay, [class*="overlay-"] {
   position: relative; }
-  .overlay:before {
+  .overlay:before, [class*="overlay-"]:before {
     top: 0;
     left: 0;
     right: 0;

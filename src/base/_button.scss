@@ -32,6 +32,20 @@
     border-radius: 40px;
   }
 
+  &.btn-disabled, &[disabled]{
+    pointer-events: none;
+
+    &:after{
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      background: fade_out(#fff, .5);
+    }
+  }
+
   i{
     width: 16px;
     text-align: center;
