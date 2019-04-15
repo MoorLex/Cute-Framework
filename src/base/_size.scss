@@ -20,14 +20,11 @@ $sizes: (
   @include media-target(h-#{$size}) { height: $length; }
 }
 
-.w-fill { width: 100%; }
-.h-fill { height: 100%; }
-
 @include media-target(w-screen) { width: 100vw; }
 @include media-target(h-screen) { height: 100vh; }
 
-.w-min-screen { min-width: 100vw; }
-.h-min-screen { min-height: 100vh; }
+@include media-target(w-min-screen) { min-width: 100vw; }
+@include media-target(h-min-screen) { min-height: 100vh; }
 
 .w-contain { max-width: 100%; }
 .h-contain { max-height: 100%; }
