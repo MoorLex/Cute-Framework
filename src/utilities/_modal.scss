@@ -1,0 +1,36 @@
+.modal{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 999;
+  position: fixed;
+  overflow-y: auto;
+  visibility: hidden;
+  background: fade_out($black, .3);
+
+  &.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-close{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .modal-dialog{
+    background: #fff;
+    margin-bottom: $spacer;
+  }
+
+  .modal-body{
+    padding: $spacer;
+  }
+}
