@@ -328,20 +328,23 @@ template {
   background-size: cover;
   background-position: center; }
 
+.bg-fixed {
+  background-attachment: fixed; }
+
 .border {
-  border: 1px solid #6C757D; }
+  border: 1px solid rgba(108, 117, 125, 0.3); }
 
 .border-top {
-  border-top: 1px solid #6C757D; }
+  border-top: 1px solid rgba(108, 117, 125, 0.3); }
 
 .border-right {
-  border-right: 1px solid #6C757D; }
+  border-right: 1px solid rgba(108, 117, 125, 0.3); }
 
 .border-bottom {
-  border-bottom: 1px solid #6C757D; }
+  border-bottom: 1px solid rgba(108, 117, 125, 0.3); }
 
 .border-left {
-  border-left: 1px solid #6C757D; }
+  border-left: 1px solid rgba(108, 117, 125, 0.3); }
 
 .border-0 {
   border: 0; }
@@ -813,8 +816,7 @@ textarea.form-control {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch; }
+  flex-wrap: wrap; }
   .row.no-gutters .col, .row.no-gutters [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
@@ -1000,7 +1002,7 @@ textarea.form-control {
 .r-3x4 {
   padding-bottom: 133.33%; }
 
-.r-5x4 {
+.r-4x5 {
   padding-bottom: 125%; }
 
 .r-1x1 {
@@ -2011,8 +2013,7 @@ small, .small {
     display: flex; }
 
 .card {
-  display: block;
-  background: #fff; }
+  display: block; }
   .card .card-header {
     padding: 5px;
     display: flex; }
