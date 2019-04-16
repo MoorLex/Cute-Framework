@@ -64,12 +64,6 @@ $colors: (
   }
 }
 
-.nav .nav-link.text-muted {
-  color: $muted;
-
-  &:hover, &:focus { color: lighten($muted, 10%); }
-}
-
 .nav .nav-link{
 
   &.bg-primary{
