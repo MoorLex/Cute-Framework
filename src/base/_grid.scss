@@ -1,7 +1,6 @@
 .row{
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
 
   &.no-gutters{
     .col, [class*="col-"] {
