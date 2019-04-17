@@ -58,72 +58,65 @@ $colors: (
 @each $color, $value in $colors {
 
   .nav .nav-link.text-#{$color} {
-    color: $value;
-
     &:hover, &:focus { color: darken($value, 10%); }
   }
+}
+
+.nav .nav-link.text-muted {
+  &:hover, &:focus { opacity: .9; }
 }
 
 .nav .nav-link{
 
   &.bg-primary{
-    background: $blue;
     color: fade_out(#fff, .1);
 
     &:hover, &:focus { color: #fff; background: $blue-dark; }
   }
 
   &.bg-warning{
-    background: $yellow;
     color: fade_out(#fff, .1);
 
     &:hover, &:focus { color: #fff; background: $yellow-dark; }
   }
 
   &.bg-success{
-    background: $green;
     color: fade_out(#fff, .1);
 
     &:hover, &:focus { color: #fff; background: $green-dark; }
   }
 
   &.bg-info{
-    background: $cyan;
     color: fade_out(#fff, .1);
 
     &:hover, &:focus { color: #fff; background: $cyan-dark; }
   }
 
   &.bg-danger{
-    background: $red;
     color: fade_out(#fff, .1);
 
     &:hover, &:focus { color: #fff; background: $red-dark; }
   }
 
   &.bg-light{
-    background: $lighter;
     color: fade_out(#3e3e3e, .1);
 
     &:hover, &:focus { color: #3e3e3e; background: #dedfe3; }
   }
 
   &.bg-muted{
-    background: $muted;
     color: fade_out(#fff, .1);
 
     &:hover, &:focus { color: #fff; background: #636b72; }
   }
 
   &.bg-dark{
-    background: $dark;
     color: fade_out(#fff, .1);
 
     &:hover, &:focus { color: #fff; background: #4f5a68; }
   }
 
   &.bg-white{
-    background: #fff;
     color: fade_out(#3e3e3e, .1);
 
     &:hover, &:focus { color: #3e3e3e; background: $lighter; }
