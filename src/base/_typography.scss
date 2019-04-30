@@ -25,9 +25,21 @@ u, .u .underline{
 }
 
 mark, .mark{
+  line-height: 1;
   padding: .2em .5em;
   border-radius: 2px;
+  display: inline-block;
   background-color: #fcf8e3;
+}
+
+code, .code{
+  line-height: 1;
+  padding: .2em .5em;
+  border-radius: 2px;
+  display: inline-block;
+  background: fade_out($red, .9);
+  border: 1px solid fade_out($red, .5);
+  font-family: "Courier New", Courier, monospace;
 }
 
 del, .del, .delete{
@@ -70,6 +82,7 @@ h6, .h6 { font-size: .8em; }
 
 a{
   color: $blue;
+  display: inline-block;
   text-decoration: none;
 
   &:hover, &:focus{
@@ -84,4 +97,5 @@ p{
 
 small, .small{
   font-size: 12px;
+  display: inline-block;
 }
