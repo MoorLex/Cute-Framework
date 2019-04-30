@@ -1,6 +1,6 @@
 {
   "name": "cute-framework",
-  "version": "0.1.45",
+  "version": "0.1.5",
   "description": "Responsive based css framework",
   "style": "dist/css/cute.css",
   "sass": "src/cute.scss",
