@@ -1,0 +1,63 @@
+.alert{
+  color: $dark;
+  display: block;
+  margin-bottom: $spacer;
+  background: fade_out($dark, .9);
+  border-bottom: 3px solid fade_out($dark, .8);
+
+  .alert-header{
+    display: flex;
+  }
+
+  .alert-body{
+    padding: $spacer;
+  }
+
+  &.bg-muted{
+    color: $muted;
+    background: fade_out($muted, .9);
+    border-color: fade_out($muted, .8);
+  }
+
+  &.bg-primary{
+    color: $blue;
+    background: fade_out($blue, .9);
+    border-color: fade_out($blue, .8);
+  }
+
+  &.bg-info{
+    color: $cyan;
+    background: fade_out($cyan, .9);
+    border-color: fade_out($cyan, .8);
+  }
+
+  &.bg-danger{
+    color: $red;
+    background: fade_out($red, .9);
+    border-color: fade_out($red, .8);
+  }
+
+  &.bg-warning{
+    color: $yellow;
+    background: fade_out($yellow, .9);
+    border-color: fade_out($yellow, .8);
+  }
+
+  &.bg-success{
+    color: $green;
+    background: fade_out($green, .9);
+    border-color: fade_out($green, .8);
+  }
+
+  &.bg-white{
+    color: $lighter;
+    background: fade_out($white, .9);
+    border-color: fade_out($white, .8);
+  }
+
+  &.bg-dark{
+    color: $lighter;
+    background: fade_out($dark, .2);
+    border-color: fade_out($lighter, .8);
+  }
+}
