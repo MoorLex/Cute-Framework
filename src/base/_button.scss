@@ -3,6 +3,7 @@
 
 .btn{
   border: none;
+  height: 40px;
   color: $muted;
   cursor: pointer;
   max-width: 100%;
@@ -12,6 +13,7 @@
   font-weight: 600;
   overflow: hidden;
   box-shadow: none;
+  background: none;
   user-select: none;
   line-height: 40px;
   text-align: center;
@@ -70,6 +72,7 @@
 .btn{
 
   &.btn-lg{
+    height: 50px;
     min-width: 50px;
     font-size: 16px;
     line-height: 50px;
@@ -81,6 +84,7 @@
   }
 
   &.btn-sm{
+    height: 30px;
     min-width: 30px;
     font-size: 12px;
     line-height: 30px;
@@ -92,6 +96,7 @@
   }
 
   &.btn-xs{
+    height: 24px;
     min-width: 24px;
     font-size: 10px;
     line-height: 24px;
