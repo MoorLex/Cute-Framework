@@ -1,15 +1,39 @@
-.form-control{
+.form-group{
+  position: relative;
+  margin-bottom: $spacer;
+  background: transparent;
+
+  .form-label{
+    display: block;
+    font-size: 14px;
+    transition: .3s;
+    font-weight: 600;
+  }
+
+  .form-help{
+    opacity: .5;
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+    transition: .3s;
+    font-weight: 600;
+    text-align: right;
+  }
+}
+
+.form-input{
   width: 100%;
+  color: $dark;
+  height: 40px;
   border: none;
-  color: #212112;
   font-size: 14px;
-  transition: .3s;
   font-weight: 500;
   box-shadow: unset;
   border-radius: 4px;
   padding-left: 15px;
   padding-right: 15px;
   background: $lighter;
+  transition: color .3s, border .3s,  background .3s;
 
   &:not(textarea){
     height: 40px;
@@ -19,9 +43,74 @@
     outline: none;
     background: #dedfe3;
   }
+
+  &.bg-white{
+    color: $muted;
+    background: $white;
+
+    &:focus{
+      background: fade_out($white, .2);
+    }
+  }
+
+  &.bg-primary{
+    color: $blue;
+    background: fade_out($blue, .9);
+
+    &:focus{
+      background: fade_out($blue, .8);
+    }
+  }
+
+  &.bg-info{
+    color: $cyan;
+    background: fade_out($cyan, .9);
+
+    &:focus{
+      background: fade_out($cyan, .8);
+    }
+  }
+
+  &.bg-danger{
+    color: $red;
+    background: fade_out($red, .9);
+
+    &:focus{
+      background: fade_out($red, .8);
+    }
+  }
+
+  &.bg-warning{
+    color: $yellow;
+    background: fade_out($yellow, .9);
+
+    &:focus{
+      background: fade_out($yellow, .8);
+    }
+  }
+
+  &.bg-success{
+    color: $green;
+    background: fade_out($green, .9);
+
+    &:focus{
+      background: fade_out($green, .8);
+    }
+  }
+
+  &.bg-dark{
+    color: $lighter;
+    background: fade_out($dark, .2);
+
+    &:focus{
+      background: fade_out($dark, .3);
+    }
+  }
 }
 
-textarea.form-control{
+textarea.form-input{
+  resize: vertical;
+  min-height: 40px;
   padding-top: 10px;
   font-family: inherit;
   padding-bottom: 10px;
