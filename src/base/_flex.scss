@@ -1,10 +1,24 @@
 //
 // Flex
 
+.flex-row{ flex-direction: row; }
+.flex-column{ flex-direction: column; }
+.flex-row-reverse{ flex-direction: row-reverse; }
+.flex-column-reverse{ flex-direction: column-reverse; }
+
 @include media-target(flex-row) { flex-direction: row; }
 @include media-target(flex-column) { flex-direction: column; }
 @include media-target(flex-row-reverse) { flex-direction: row-reverse; }
 @include media-target(flex-column-reverse) { flex-direction: column-reverse; }
+
+.flex-wrap{ flex-wrap: wrap; }
+.flex-nowrap{ flex-wrap: nowrap; }
+.flex-wrap-reverse{ flex-wrap: wrap-reverse; }
+.flex-fill{ flex: 1 1 auto; }
+.flex-grow-0{ flex-grow: 0; }
+.flex-grow-1{ flex-grow: 1; }
+.flex-shrink-0{ flex-shrink: 0; }
+.flex-shrink-1{ flex-shrink: 1; }
 
 @include media-target(flex-wrap) { flex-wrap: wrap; }
 @include media-target(flex-nowrap) { flex-wrap: nowrap; }
@@ -15,17 +29,36 @@
 @include media-target(flex-shrink-0) { flex-shrink: 0; }
 @include media-target(flex-shrink-1) { flex-shrink: 1; }
 
+.justify-content-start{ justify-content: flex-start; }
+.justify-content-end{ justify-content: flex-end; }
+.justify-content-center{ justify-content: center; }
+.justify-content-between{ justify-content: space-between; }
+.justify-content-around{ justify-content: space-around; }
+
 @include media-target(justify-content-start) { justify-content: flex-start; }
 @include media-target(justify-content-end) { justify-content: flex-end; }
 @include media-target(justify-content-center) { justify-content: center; }
 @include media-target(justify-content-between) { justify-content: space-between; }
 @include media-target(justify-content-around) { justify-content: space-around; }
 
+.align-items-start{ align-items: flex-start; }
+.align-items-end{ align-items: flex-end; }
+.align-items-center{ align-items: center; }
+.align-items-baseline{ align-items: baseline; }
+.align-items-stretch{ align-items: stretch; }
+
 @include media-target(align-items-start) { align-items: flex-start; }
 @include media-target(align-items-end) { align-items: flex-end; }
 @include media-target(align-items-center) { align-items: center; }
 @include media-target(align-items-baseline) { align-items: baseline; }
 @include media-target(align-items-stretch) { align-items: stretch; }
+
+.align-content-start{ align-content: flex-start; }
+.align-content-end{ align-content: flex-end; }
+.align-content-center{ align-content: center; }
+.align-content-between{ align-content: space-between; }
+.align-content-around{ align-content: space-around; }
+.align-content-stretch{ align-content: stretch; }
 
 @include media-target(align-content-start) { align-content: flex-start; }
 @include media-target(align-content-end) { align-content: flex-end; }
@@ -34,9 +67,17 @@
 @include media-target(align-content-around) { align-content: space-around; }
 @include media-target(align-content-stretch) { align-content: stretch; }
 
+.align-self-auto{ align-self: auto; }
+.align-self-start{ align-self: flex-start; }
+.align-self-end{ align-self: flex-end; }
+.align-self-center{ align-self: center; }
+.align-self-baseline{ align-self: baseline; }
+.align-self-stretch{ align-self: stretch; }
+
 @include media-target(align-self-auto) { align-self: auto; }
 @include media-target(align-self-start) { align-self: flex-start; }
 @include media-target(align-self-end) { align-self: flex-end; }
 @include media-target(align-self-center) { align-self: center; }
 @include media-target(align-self-baseline) { align-self: baseline; }
 @include media-target(align-self-stretch) { align-self: stretch; }
+

@@ -3,6 +3,10 @@
 
 $floats: left, right, none;
 
+.float-left{ float: left; }
+.float-right{ float: right; }
+.float-none{ float: none; }
+
 @each $float in $floats {
   @include media-target(float-#{$float}) { float: $float; }
 }

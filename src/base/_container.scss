@@ -21,6 +21,13 @@
   padding-right: 15px;
 }
 
+.content-center{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @include media-target(content-center) {
   display: flex;
   align-items: center;

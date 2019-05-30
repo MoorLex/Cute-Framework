@@ -12,9 +12,17 @@ $colors: (
   lighter: $lighter
 );
 
-@each $color, $value in $colors {
-  .bg-#{$color} { background: $value; }
-}
+.bg-primary{ background: $blue; }
+.bg-danger{ background: $red; }
+.bg-warning{ background: $yellow; }
+.bg-success{ background: $green; }
+.bg-info{ background: $cyan; }
+.bg-white{ background: $white; }
+.bg-muted{ background: $muted; }
+.bg-darker{ background: $darker; }
+.bg-dark{ background: $dark; }
+.bg-light{ background: $light; }
+.bg-lighter{ background: $lighter; }
 
 .bg-image{
   background-size: cover;
@@ -23,4 +31,8 @@ $colors: (
 
 .bg-fixed{
   background-attachment: fixed;
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color} { background: $value; }
 }

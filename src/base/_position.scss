@@ -3,9 +3,9 @@
 
 $positions: relative, absolute;
 
-@each $pos in $positions {
-  @include media-target(p-#{$pos}) { position: $pos; }
-}
+.p-relative{ position: relative; }
+.p-absolute{ position: absolute; }
+.p-fixed{ position: fixed; }
 
 .fixed-top, .fixed-bottom {
   left: 0;
@@ -30,4 +30,8 @@ $positions: relative, absolute;
 
 .sticky-bottom {
   @supports (position: sticky) { bottom: 0; }
+}
+
+@each $pos in $positions {
+  @include media-target(p-#{$pos}) { position: $pos; }
 }

@@ -1,6 +1,16 @@
 //
 // Layers
 
+.z-1{ z-index: 10; }
+.z-2{ z-index: 20; }
+.z-3{ z-index: 30; }
+.z-4{ z-index: 40; }
+.z-5{ z-index: 50; }
+.z-6{ z-index: 60; }
+.z-7{ z-index: 70; }
+.z-8{ z-index: 80; }
+.z-9{ z-index: 90; }
+
 @for $i from 1 through 9 {
   @include media-target(z-#{$i}) { z-index: $i*100 !important; }
 }

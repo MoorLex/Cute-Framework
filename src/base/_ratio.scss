@@ -1,6 +1,20 @@
 //
 // Ratio
 
+.r-9x21{ padding-bottom: 233.33%; }
+.r-9x16{ padding-bottom: 177.77%; }
+.r-10x16{ padding-bottom: 160%; }
+.r-2x3{ padding-bottom: 150%; }
+.r-3x4{ padding-bottom: 133.33%; }
+.r-4x5{ padding-bottom: 125%; }
+.r-1x1{ padding-bottom: 100%; }
+.r-5x4{ padding-bottom: 80%; }
+.r-4x3{ padding-bottom: 75%; }
+.r-3x2{ padding-bottom: 66.67%; }
+.r-16x10{ padding-bottom: 62.5%; }
+.r-16x9{ padding-bottom: 56.25%; }
+.r-21x9{ padding-bottom: 42.86%; }
+
 @include media-target(r-9x21) { padding-bottom: 233.33%; }
 @include media-target(r-9x16) { padding-bottom: 177.77%; }
 @include media-target(r-10x16) { padding-bottom: 160%; }
@@ -15,7 +29,7 @@
 @include media-target(r-16x9) { padding-bottom: 56.25%; }
 @include media-target(r-21x9) { padding-bottom: 42.86%; }
 
-[class^="r-"], [class*=" r-"] {
+.ratio {
   width: 100%;
   display: block;
   position: relative;

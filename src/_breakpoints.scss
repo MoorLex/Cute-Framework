@@ -79,7 +79,6 @@
 }
 
 @mixin media-target($name) {
-  .#{$name} { @content }
 
   @if $static {}
   @else {

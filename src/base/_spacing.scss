@@ -12,36 +12,219 @@ $spacers: (
   10: ($spacer * 8)
 );
 
+.m-0{ margin: 0 }
+.m-1{ margin: ($spacer * .25) }
+.m-2{ margin: ($spacer * .5) }
+.m-3{ margin: $spacer }
+.m-4{ margin: ($spacer * 1.5) }
+.m-5{ margin: ($spacer * 3) }
+.m-6{ margin: ($spacer * 4) }
+.m-7{ margin: ($spacer * 5) }
+.m-8{ margin: ($spacer * 6) }
+.m-9{ margin: ($spacer * 7) }
+.m-10{ margin: ($spacer * 8) }
+.m-auto{ margin: auto }
+
+.p-0{ padding: 0 }
+.p-1{ padding: ($spacer * .25) }
+.p-2{ padding: ($spacer * .5) }
+.p-3{ padding: $spacer }
+.p-4{ padding: ($spacer * 1.5) }
+.p-5{ padding: ($spacer * 3) }
+.p-6{ padding: ($spacer * 4) }
+.p-7{ padding: ($spacer * 5) }
+.p-8{ padding: ($spacer * 6) }
+.p-9{ padding: ($spacer * 7) }
+.p-10{ padding: ($spacer * 8) }
+.p-auto{ padding: auto }
+
+.mt-0{ margin-top: 0 }
+.mt-1{ margin-top: ($spacer * .25) }
+.mt-2{ margin-top: ($spacer * .5) }
+.mt-3{ margin-top: $spacer }
+.mt-4{ margin-top: ($spacer * 1.5) }
+.mt-5{ margin-top: ($spacer * 3) }
+.mt-6{ margin-top: ($spacer * 4) }
+.mt-7{ margin-top: ($spacer * 5) }
+.mt-8{ margin-top: ($spacer * 6) }
+.mt-9{ margin-top: ($spacer * 7) }
+.mt-10{ margin-top: ($spacer * 8) }
+.mt-auto{ margin-top: auto }
+
+.pt-0{ padding-top: 0 }
+.pt-1{ padding-top: ($spacer * .25) }
+.pt-2{ padding-top: ($spacer * .5) }
+.pt-3{ padding-top: $spacer }
+.pt-4{ padding-top: ($spacer * 1.5) }
+.pt-5{ padding-top: ($spacer * 3) }
+.pt-6{ padding-top: ($spacer * 4) }
+.pt-7{ padding-top: ($spacer * 5) }
+.pt-8{ padding-top: ($spacer * 6) }
+.pt-9{ padding-top: ($spacer * 7) }
+.pt-10{ padding-top: ($spacer * 8) }
+.pt-auto{ padding-top: auto }
+
+.mb-0{ margin-bottom: 0 }
+.mb-1{ margin-bottom: ($spacer * .25) }
+.mb-2{ margin-bottom: ($spacer * .5) }
+.mb-3{ margin-bottom: $spacer }
+.mb-4{ margin-bottom: ($spacer * 1.5) }
+.mb-5{ margin-bottom: ($spacer * 3) }
+.mb-6{ margin-bottom: ($spacer * 4) }
+.mb-7{ margin-bottom: ($spacer * 5) }
+.mb-8{ margin-bottom: ($spacer * 6) }
+.mb-9{ margin-bottom: ($spacer * 7) }
+.mb-10{ margin-bottom: ($spacer * 8) }
+.mb-auto{ margin-bottom: auto }
+
+.pb-0{ padding-bottom: 0 }
+.pb-1{ padding-bottom: ($spacer * .25) }
+.pb-2{ padding-bottom: ($spacer * .5) }
+.pb-3{ padding-bottom: $spacer }
+.pb-4{ padding-bottom: ($spacer * 1.5) }
+.pb-5{ padding-bottom: ($spacer * 3) }
+.pb-6{ padding-bottom: ($spacer * 4) }
+.pb-7{ padding-bottom: ($spacer * 5) }
+.pb-8{ padding-bottom: ($spacer * 6) }
+.pb-9{ padding-bottom: ($spacer * 7) }
+.pb-10{ padding-bottom: ($spacer * 8) }
+.pb-auto{ padding-bottom: auto }
+
+.ml-0{ margin-left: 0 }
+.ml-1{ margin-left: ($spacer * .25) }
+.ml-2{ margin-left: ($spacer * .5) }
+.ml-3{ margin-left: $spacer }
+.ml-4{ margin-left: ($spacer * 1.5) }
+.ml-5{ margin-left: ($spacer * 3) }
+.ml-6{ margin-left: ($spacer * 4) }
+.ml-7{ margin-left: ($spacer * 5) }
+.ml-8{ margin-left: ($spacer * 6) }
+.ml-9{ margin-left: ($spacer * 7) }
+.ml-10{ margin-left: ($spacer * 8) }
+.ml-auto{ margin-left: auto }
+
+.pl-0{ padding-left: 0 }
+.pl-1{ padding-left: ($spacer * .25) }
+.pl-2{ padding-left: ($spacer * .5) }
+.pl-3{ padding-left: $spacer }
+.pl-4{ padding-left: ($spacer * 1.5) }
+.pl-5{ padding-left: ($spacer * 3) }
+.pl-6{ padding-left: ($spacer * 4) }
+.pl-7{ padding-left: ($spacer * 5) }
+.pl-8{ padding-left: ($spacer * 6) }
+.pl-9{ padding-left: ($spacer * 7) }
+.pl-10{ padding-left: ($spacer * 8) }
+.pl-auto{ padding-left: auto }
+
+.mr-0{ margin-right: 0 }
+.mr-1{ margin-right: ($spacer * .25) }
+.mr-2{ margin-right: ($spacer * .5) }
+.mr-3{ margin-right: $spacer }
+.mr-4{ margin-right: ($spacer * 1.5) }
+.mr-5{ margin-right: ($spacer * 3) }
+.mr-6{ margin-right: ($spacer * 4) }
+.mr-7{ margin-right: ($spacer * 5) }
+.mr-8{ margin-right: ($spacer * 6) }
+.mr-9{ margin-right: ($spacer * 7) }
+.mr-10{ margin-right: ($spacer * 8) }
+.mr-auto{ margin-right: auto }
+
+.pr-0{ padding-right: 0; }
+.pr-1{ padding-right: ($spacer * .25) }
+.pr-2{ padding-right: ($spacer * .5) }
+.pr-3{ padding-right: $spacer }
+.pr-4{ padding-right: ($spacer * 1.5) }
+.pr-5{ padding-right: ($spacer * 3) }
+.pr-6{ padding-right: ($spacer * 4) }
+.pr-7{ padding-right: ($spacer * 5) }
+.pr-8{ padding-right: ($spacer * 6) }
+.pr-9{ padding-right: ($spacer * 7) }
+.pr-10{ padding-right: ($spacer * 8) }
+.pr-auto{ padding-right: auto }
+
+.mx-0{ margin-left: 0; margin-right: 0; }
+.mx-1{ margin-left: ($spacer * .25); margin-right: ($spacer * .25); }
+.mx-2{ margin-left: ($spacer * .5); margin-right: ($spacer * .5); }
+.mx-3{ margin-left: $spacer; margin-right: $spacer; }
+.mx-4{ margin-left: ($spacer * 1.5); margin-right: ($spacer * 1.5); }
+.mx-5{ margin-left: ($spacer * 3); margin-right: ($spacer * 3); }
+.mx-6{ margin-left: ($spacer * 4); margin-right: ($spacer * 4); }
+.mx-7{ margin-left: ($spacer * 5); margin-right: ($spacer * 5); }
+.mx-8{ margin-left: ($spacer * 6); margin-right: ($spacer * 6); }
+.mx-9{ margin-left: ($spacer * 7); margin-right: ($spacer * 7); }
+.mx-10{ margin-left: ($spacer * 8); margin-right: ($spacer * 8); }
+.mx-auto{ margin-left: auto; margin-right: auto; }
+
+.px-0{ padding-left: 0; padding-right: 0; }
+.px-1{ padding-left: ($spacer * .25); padding-right: ($spacer * .25); }
+.px-2{ padding-left: ($spacer * .5); padding-right: ($spacer * .5); }
+.px-3{ padding-left: $spacer; padding-right: $spacer; }
+.px-4{ padding-left: ($spacer * 1.5); padding-right: ($spacer * 1.5); }
+.px-5{ padding-left: ($spacer * 3); padding-right: ($spacer * 3); }
+.px-6{ padding-left: ($spacer * 4); padding-right: ($spacer * 4); }
+.px-7{ padding-left: ($spacer * 5); padding-right: ($spacer * 5); }
+.px-8{ padding-left: ($spacer * 6); padding-right: ($spacer * 6); }
+.px-9{ padding-left: ($spacer * 7); padding-right: ($spacer * 7); }
+.px-10{ padding-left: ($spacer * 8); padding-right: ($spacer * 8); }
+.px-auto{ padding-left: auto; padding-right: auto; }
+
+.my-0{ margin-top: 0; margin-bottom: 0; }
+.my-1{ margin-top: ($spacer * .25); margin-bottom: ($spacer * .25); }
+.my-2{ margin-top: ($spacer * .5); margin-bottom: ($spacer * .5); }
+.my-3{ margin-top: $spacer; margin-bottom: $spacer; }
+.my-4{ margin-top: ($spacer * 1.5); margin-bottom: ($spacer * 1.5); }
+.my-5{ margin-top: ($spacer * 3); margin-bottom: ($spacer * 3); }
+.my-6{ margin-top: ($spacer * 4); margin-bottom: ($spacer * 4); }
+.my-7{ margin-top: ($spacer * 5); margin-bottom: ($spacer * 5); }
+.my-8{ margin-top: ($spacer * 6); margin-bottom: ($spacer * 6); }
+.my-9{ margin-top: ($spacer * 7); margin-bottom: ($spacer * 7); }
+.my-10{ margin-top: ($spacer * 8); margin-bottom: ($spacer * 8); }
+.my-auto{ margin-top: auto; margin-bottom: auto; }
+
+.py-0{ padding-top: 0; padding-bottom: 0; }
+.py-1{ padding-top: ($spacer * .25); padding-bottom: ($spacer * .25); }
+.py-2{ padding-top: ($spacer * .5); padding-bottom: ($spacer * .5); }
+.py-3{ padding-top: $spacer; padding-bottom: $spacer; }
+.py-4{ padding-top: ($spacer * 1.5); padding-bottom: ($spacer * 1.5); }
+.py-5{ padding-top: ($spacer * 3); padding-bottom: ($spacer * 3); }
+.py-6{ padding-top: ($spacer * 4); padding-bottom: ($spacer * 4); }
+.py-7{ padding-top: ($spacer * 5); padding-bottom: ($spacer * 5); }
+.py-8{ padding-top: ($spacer * 6); padding-bottom: ($spacer * 6); }
+.py-9{ padding-top: ($spacer * 7); padding-bottom: ($spacer * 7); }
+.py-10{ padding-top: ($spacer * 8); padding-bottom: ($spacer * 8); }
+.py-auto{ padding-top: auto; padding-bottom: auto; }
+
+
 @each $prop, $abbrev in (margin: m, padding: p) {
   @each $size, $length in $spacers {
-    @include media-target(#{$abbrev}-#{$size}) { #{$prop}: $length !important; }
-    @include media-target(#{$abbrev}t-#{$size}) { #{$prop}-top: $length !important; }
-    @include media-target(#{$abbrev}b-#{$size}) { #{$prop}-bottom: $length !important; }
-    @include media-target(#{$abbrev}l-#{$size}) { #{$prop}-left: $length !important; }
-    @include media-target(#{$abbrev}r-#{$size}) { #{$prop}-right: $length !important; }
+    @include media-target(#{$abbrev}-#{$size}) { #{$prop}: $length; }
+    @include media-target(#{$abbrev}t-#{$size}) { #{$prop}-top: $length; }
+    @include media-target(#{$abbrev}b-#{$size}) { #{$prop}-bottom: $length; }
+    @include media-target(#{$abbrev}l-#{$size}) { #{$prop}-left: $length; }
+    @include media-target(#{$abbrev}r-#{$size}) { #{$prop}-right: $length; }
 
     @include media-target(#{$abbrev}x-#{$size}) {
-      #{$prop}-left: $length !important;
-      #{$prop}-right: $length !important;
+      #{$prop}-left: $length;
+      #{$prop}-right: $length;
     }
 
     @include media-target(#{$abbrev}y-#{$size}) {
-      #{$prop}-top: $length !important;
-      #{$prop}-bottom: $length !important;
+      #{$prop}-top: $length;
+      #{$prop}-bottom: $length;
     }
   }
 
   @each $dir, $abb in (top: t, bottom: b, left: l, right: r){
-    @include media-target(#{$abbrev}#{$abb}-auto) { #{$prop}-#{$dir}: auto !important; }
+    @include media-target(#{$abbrev}#{$abb}-auto) { #{$prop}-#{$dir}: auto; }
   }
 
   @include media-target(#{$abbrev}x-auto) {
-    #{$prop}-left: auto !important;
-    #{$prop}-right: auto !important;
+    #{$prop}-left: auto;
+    #{$prop}-right: auto;
   }
 
   @include media-target(#{$abbrev}y-auto) {
-    #{$prop}-top: auto !important;
-    #{$prop}-bottom: auto !important;
+    #{$prop}-top: auto;
+    #{$prop}-bottom: auto;
   }
 }

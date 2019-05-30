@@ -12,9 +12,12 @@ body{
   font-family: Arial, sans-serif;
 }
 
-b, strong, .bold{
-  font-weight: bold;
+b, strong, .strong .font-bold{
+  font-weight: bolder;
 }
+
+.font-lighter{ font-weight: lighter; }
+.font-normal{ font-weight: normal; }
 
 em, .em .italic{
   font-style: italic;
@@ -91,9 +94,8 @@ a{
   }
 }
 
-p{
-  margin-bottom: 1rem;
-}
+p{ margin-bottom: 1rem; }
+.lead{ font-size: 1.125em; }
 
 small, .small{
   font-size: 12px;

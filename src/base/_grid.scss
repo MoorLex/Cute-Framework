@@ -20,12 +20,22 @@
     padding-right: $spacer;
   }
 
+  .order-first{ order: -1;}
+  .order-last{ order: $grid-columns + 1;}
+
   @include media-target(order-first) { order: -1; }
   @include media-target(order-last) { order: $grid-columns + 1; }
 
   @for $i from 1 through $grid-columns {
 
+    .order-#{$i} { order: $i; }
+
     @include media-target(order-#{$i}) { order: $i; }
+
+    .col-#{$i} {
+      flex: 0 0 percentage($i / $grid-columns);
+      max-width: percentage($i / $grid-columns);
+    }
 
     @include media-target(col-#{$i}) {
       flex: 0 0 percentage($i / $grid-columns);

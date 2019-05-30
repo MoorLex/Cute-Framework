@@ -1,10 +1,11 @@
 //
 // Visibility
 
+.visible{ visibility: visible; }
+.hidden{ visibility: hidden; }
+
 @each $prop in (visible, hidden) {
   @include media-target($prop) { visibility: $prop; }
 }
 
-[hidden] {
-  display: none !important;
-}
+[hidden] { display: none !important; }
