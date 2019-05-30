@@ -1,7 +1,12 @@
 //
 // Text
 
-$aligns: left , right , center, justify;
+$aligns: left, right, center, justify;
+
+.text-left{ text-align: left; }
+.text-right{ text-align: right; }
+.text-center{ text-align: center; }
+.text-justify{ text-align: justify; }
 
 @each $align in $aligns {
   @include media-target(text-#{$align}) { text-align: $align; }
