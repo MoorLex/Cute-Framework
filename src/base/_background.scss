@@ -1,22 +1,8 @@
-$colors: (
-  primary: $blue,
-  danger: $red,
-  warning: $yellow,
-  success: $green,
-  info: $cyan,
-  white: $white,
-  muted: $muted,
-  darker: $darker,
-  dark: $dark,
-  light: $light,
-  lighter: $lighter
-);
-
-.bg-primary{ background: $blue; }
-.bg-danger{ background: $red; }
-.bg-warning{ background: $yellow; }
-.bg-success{ background: $green; }
-.bg-info{ background: $cyan; }
+.bg-primary{ background: $primary; }
+.bg-danger{ background: $danger; }
+.bg-warning{ background: $warning; }
+.bg-success{ background: $success; }
+.bg-info{ background: $info; }
 .bg-white{ background: $white; }
 .bg-muted{ background: $muted; }
 .bg-darker{ background: $darker; }
@@ -31,8 +17,4 @@ $colors: (
 
 .bg-fixed{
   background-attachment: fixed;
-}
-
-@each $color, $value in $colors {
-  .bg-#{$color} { background: $value; }
 }

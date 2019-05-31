@@ -89,7 +89,7 @@ a{
   text-decoration: none;
 
   &:hover, &:focus{
-    color: darken($blue, 10%);
+    color: $blue-dark;
     text-decoration: none;
   }
 }

@@ -54,47 +54,47 @@
   }
 
   &.bg-primary{
-    color: $blue;
-    background: fade_out($blue, .9);
+    color: $primary;
+    background: fade_out($primary, .9);
 
     &:focus{
-      background: fade_out($blue, .8);
+      background: fade_out($primary, .8);
     }
   }
 
   &.bg-info{
-    color: $cyan;
-    background: fade_out($cyan, .9);
+    color: $info;
+    background: fade_out($info, .9);
 
     &:focus{
-      background: fade_out($cyan, .8);
+      background: fade_out($info, .8);
     }
   }
 
   &.bg-danger{
-    color: $red;
-    background: fade_out($red, .9);
+    color: $danger;
+    background: fade_out($danger, .9);
 
     &:focus{
-      background: fade_out($red, .8);
+      background: fade_out($danger, .8);
     }
   }
 
   &.bg-warning{
-    color: $yellow;
-    background: fade_out($yellow, .9);
+    color: $warning;
+    background: fade_out($warning, .9);
 
     &:focus{
-      background: fade_out($yellow, .8);
+      background: fade_out($warning, .8);
     }
   }
 
   &.bg-success{
-    color: $green;
-    background: fade_out($green, .9);
+    color: $success;
+    background: fade_out($success, .9);
 
     &:focus{
-      background: fade_out($green, .8);
+      background: fade_out($success, .8);
     }
   }
 
@@ -106,6 +106,14 @@
       background: fade_out($dark, .3);
     }
   }
+}
+
+.input-wrap{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: stretch;
 }
 
 textarea.form-input{

@@ -1,5 +1,9 @@
 $static: false !default;
 
+
+//
+// Colors
+
 $white: #ffffff !default;
 
 $blue-light: #689eee !default;
@@ -10,15 +14,19 @@ $red-light: #f37e8a !default;
 $red: #F24F54 !default;
 $red-dark: #dc6874 !default;
 
-$yellow-light: #f37755 !default;
-$yellow: #F26A44 !default;
-$yellow-dark: #dc613e !default;
+$yellow-light: #fec876 !default;
+$yellow: #fec369 !default;
+$yellow-dark: #e7b260 !default;
+
+$orange-light: #f37755 !default;
+$orange: #F26A44 !default;
+$orange-dark: #dc613e !default;
 
 $green-light: #8bc089 !default;
 $green: #80ba7e !default;
 $green-dark: #75aa73 !default;
 
-$cyan: #67b2b4 !default;
+$cyan-light: #67b2b4 !default;
 $cyan: #54a9ab !default;
 $cyan-dark: #419fa2 !default;
 
@@ -29,10 +37,39 @@ $light: #c7d3db !default;
 $lighter: #ecf0f3 !default;
 $black: #333333 !default;
 
+
+$primary-light: $blue-light !default;
+$primary: $blue !default;
+$primary-dark: $blue-dark !default;
+
+$danger-light: $red-light !default;
+$danger: $red !default;
+$danger-dark: $red-dark !default;
+
+$warning-light: $yellow-light !default;
+$warning: $yellow !default;
+$warning-dark: $yellow-dark !default;
+
+$success-lights: $green-light !default;
+$success: $green !default;
+$success-dark: $green-dark !default;
+
+$info-light: $cyan-light!default;
+$info: $cyan !default;
+$info-dark: $cyan-dark !default;
+
+
+//
+// Typography
+
 $font-family-base: Verdana, sans-serif !default;
 
 $font-size-base: 1rem !default;
 $line-height-base: 1em !default;
+
+
+//
+// Grid
 
 $grid-breakpoints: (
   xs: 0,
@@ -49,5 +86,12 @@ $container-max-widths: (
   xl: 1440px
 ) !default;
 
-$spacer: 15px;
 $grid-columns: 12;
+$spacer: 15px;
+
+
+//
+// Border
+
+$border-width: 1px;
+$border-color: fade_out($muted, .5);

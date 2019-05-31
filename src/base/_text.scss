@@ -17,27 +17,70 @@ $aligns: left, right, center, justify;
 .text-uppercase { text-transform: uppercase; }
 .text-capitalize { text-transform: capitalize; }
 
-$colors: (
-  primary: $blue,
-  danger: $red,
-  warning: $yellow,
-  success: $green,
-  info: $cyan,
-  white: $white,
-  darker: $darker,
-  dark: $dark,
-  light: $light,
-  lighter: $lighter,
-  black: #212121
-);
+.text-primary { color: $primary; }
 
-@each $color, $value in $colors {
+a.text-primary {
+  &:hover, &:focus { color: $primary-dark; }
+}
 
-  .text-#{$color} { color: $value; }
+.text-danger { color: $danger; }
 
-  a.text-#{$color} {
-    &:hover, &:focus { color: darken($value, 10%); }
-  }
+a.text-danger {
+  &:hover, &:focus { color: $danger-dark; }
+}
+
+.text-warning { color: $warning; }
+
+a.text-warning {
+  &:hover, &:focus { color: $warning-dark; }
+}
+
+.text-success { color: $success; }
+
+a.text-success {
+  &:hover, &:focus { color: $success-dark; }
+}
+
+.text-info { color: $info; }
+
+a.text-info {
+  &:hover, &:focus { color: $info-dark; }
+}
+
+.text-white { color: $white; }
+
+a.text-white {
+  &:hover, &:focus { color: $lighter; }
+}
+
+.text-darker { color: $darker; }
+
+a.text-darker {
+  &:hover, &:focus { color: $dark; }
+}
+
+.text-dark { color: $dark; }
+
+a.text-dark {
+  &:hover, &:focus { color: $darker; }
+}
+
+.text-light { color: $light; }
+
+a.text-light {
+  &:hover, &:focus { color: $lighter; }
+}
+
+.text-lighter { color: $lighter; }
+
+a.text-lighter {
+  &:hover, &:focus { color: $light; }
+}
+
+.text-black { color: $black; }
+
+a.text-black {
+  &:hover, &:focus { color: $darker; }
 }
 
 .text-muted { opacity: .6 }

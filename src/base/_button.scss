@@ -44,7 +44,7 @@
       bottom: 0;
       content: '';
       position: absolute;
-      background: fade_out(#fff, .5);
+      background: fade_out($white, .5);
     }
   }
 
@@ -116,111 +116,111 @@
 .btn{
 
   &.text-primary{
-    color: $blue;
+    color: $primary;
 
-    &:hover, &:focus { color: $blue-dark }
+    &:hover, &:focus { color: $primary-dark }
   }
 
   &.text-warning{
-    color: $yellow;
+    color: $warning;
 
-    &:hover, &:focus { color: $yellow-dark; }
+    &:hover, &:focus { color: $warning-dark; }
   }
 
   &.text-success{
-    color: $green;
+    color: $success;
 
-    &:hover, &:focus { color: $green-dark; }
+    &:hover, &:focus { color: $success-dark; }
   }
 
   &.text-info{
-    color: $cyan;
+    color: $info;
 
-    &:hover, &:focus { color: $cyan-dark; }
+    &:hover, &:focus { color: $info-dark; }
   }
 
   &.text-danger{
-    color: $red;
+    color: $danger;
 
-    &:hover, &:focus { color: $red-dark; }
+    &:hover, &:focus { color: $danger-dark; }
   }
 
   &.text-light{
     color: $lighter;
 
-    &:hover, &:focus { color: #dedfe3; }
+    &:hover, &:focus { color: $light; }
   }
 
   &.text-dark{
     color: $dark;
 
-    &:hover, &:focus { color: #4f5a68; }
+    &:hover, &:focus { color: $darker; }
   }
 }
 
 .btn{
 
   &.bg-primary{
-    background: $blue;
-    color: fade_out(#fff, .1);
+    background: $primary;
+    color: fade_out($white, .1);
 
-    &:hover, &:focus { color: #fff; background: $blue-dark; }
+    &:hover, &:focus { color: $white; background: $primary-dark; }
   }
 
   &.bg-warning{
-    background: $yellow;
-    color: fade_out(#fff, .1);
+    background: $warning;
+    color: fade_out($white, .1);
 
-    &:hover, &:focus { color: #fff; background: $yellow-dark; }
+    &:hover, &:focus { color: $white; background: $warning-dark; }
   }
 
   &.bg-success{
-    background: $green;
-    color: fade_out(#fff, .1);
+    background: $success;
+    color: fade_out($white, .1);
 
-    &:hover, &:focus { color: #fff; background: $green-dark; }
+    &:hover, &:focus { color: $white; background: $success-dark; }
   }
 
   &.bg-info{
-    background: $cyan;
-    color: fade_out(#fff, .1);
+    background: $info;
+    color: fade_out($white, .1);
 
-    &:hover, &:focus { color: #fff; background: $cyan-dark; }
+    &:hover, &:focus { color: $white; background: $info-dark; }
   }
 
   &.bg-danger{
-    background: $red;
-    color: fade_out(#fff, .1);
+    background: $danger;
+    color: fade_out($white, .1);
 
-    &:hover, &:focus { color: #fff; background: $red-dark; }
+    &:hover, &:focus { color: $white; background: $danger-dark; }
   }
 
   &.bg-light{
     background: $lighter;
-    color: fade_out(#3e3e3e, .1);
+    color: fade_out($dark, .1);
 
-    &:hover, &:focus { color: #3e3e3e; background: #dedfe3; }
+    &:hover, &:focus { color: $dark; background: $light; }
   }
 
   &.bg-muted{
     background: $muted;
-    color: fade_out(#fff, .1);
+    color: fade_out($white, .1);
 
-    &:hover, &:focus { color: #fff; background: #636b72; }
+    &:hover, &:focus { color: $white; background: #636b72; }
   }
 
   &.bg-dark{
     background: $dark;
-    color: fade_out(#fff, .1);
+    color: fade_out($white, .1);
 
-    &:hover, &:focus { color: #fff; background: #4f5a68; }
+    &:hover, &:focus { color: $white; background: $darker; }
   }
 
   &.bg-white{
-    background: #fff;
-    color: fade_out(#3e3e3e, .1);
+    background: $white;
+    color: fade_out($dark, .1);
 
-    &:hover, &:focus { color: #3e3e3e; background: $lighter; }
+    &:hover, &:focus { color: $dark; background: $lighter; }
   }
 }
 
