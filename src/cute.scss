@@ -4,7 +4,6 @@
 @import "breakpoints";
 
 @import "base/align";
-@import "base/alert";
 @import "base/background";
 @import "base/border";
 @import "base/button";
@@ -25,6 +24,7 @@
 @import "base/typography";
 @import "base/visibility";
 
+@import "utilities/alert";
 @import "utilities/nav";
 @import "utilities/navbar";
 @import "utilities/card";

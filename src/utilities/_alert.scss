@@ -20,33 +20,33 @@
   }
 
   &.bg-primary{
-    color: $blue;
-    background: fade_out($blue, .9);
-    border-color: fade_out($blue, .8);
+    color: $primary;
+    background: fade_out($primary, .9);
+    border-color: fade_out($primary, .8);
   }
 
   &.bg-info{
-    color: $cyan;
-    background: fade_out($cyan, .9);
-    border-color: fade_out($cyan, .8);
+    color: $info;
+    background: fade_out($info, .9);
+    border-color: fade_out($info, .8);
   }
 
   &.bg-danger{
-    color: $red;
-    background: fade_out($red, .9);
-    border-color: fade_out($red, .8);
+    color: $danger;
+    background: fade_out($danger, .9);
+    border-color: fade_out($danger, .8);
   }
 
   &.bg-warning{
-    color: $yellow;
-    background: fade_out($yellow, .9);
-    border-color: fade_out($yellow, .8);
+    color: $warning;
+    background: fade_out($warning, .9);
+    border-color: fade_out($warning, .8);
   }
 
   &.bg-success{
-    color: $green;
-    background: fade_out($green, .9);
-    border-color: fade_out($green, .8);
+    color: $success;
+    background: fade_out($success, .9);
+    border-color: fade_out($success, .8);
   }
 
   &.bg-white{
