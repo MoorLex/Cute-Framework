@@ -7,7 +7,24 @@ $positions: relative, absolute;
 .p-absolute{ position: absolute; }
 .p-fixed{ position: fixed; }
 
+@include media-target(p-relative) { position: relative; }
+@include media-target(p-absolute) { position: absolute; }
+@include media-target(p-fixed) { position: fixed; }
+
 .fixed-top, .fixed-bottom {
+  left: 0;
+  right: 0;
+  z-index: 100;
+  position: fixed;
+}
+
+@include media-target(fixed-top) {
+  left: 0;
+  right: 0;
+  z-index: 100;
+  position: fixed;
+}
+@include media-target(fixed-bottom) {
   left: 0;
   right: 0;
   z-index: 100;
@@ -18,6 +35,19 @@ $positions: relative, absolute;
 .fixed-bottom { bottom: 0; }
 
 .sticky-top, .sticky-bottom {
+  @supports (position: sticky) {
+    z-index: 100;
+    position: sticky;
+  }
+}
+
+@include media-target(sticky-top) {
+  @supports (position: sticky) {
+    z-index: 100;
+    position: sticky;
+  }
+}
+@include media-target(sticky-bottom) {
   @supports (position: sticky) {
     z-index: 100;
     position: sticky;

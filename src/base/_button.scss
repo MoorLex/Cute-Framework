@@ -34,7 +34,7 @@
     border-radius: 40px;
   }
 
-  &.btn-disabled, &[disabled]{
+  &.disabled, &[disabled]{
     pointer-events: none;
 
     &:after{
@@ -52,7 +52,6 @@
     width: 16px;
     text-align: center;
     line-height: unset;
-    display: inline-block;
 
     &.float-right{
       float: right;
@@ -80,7 +79,12 @@
     padding-right: $spacer + 5px;
 
     &.btn-rounded{ border-radius: 50px; }
-    i{ width: 18px; }
+    i{
+      width: 18px;
+
+      &.float-right{ margin-left: $spacer + 5px; }
+      &.float-left{ margin-right: $spacer + 5px; }
+    }
   }
 
   &.btn-sm{
@@ -92,7 +96,12 @@
     padding-right: $spacer;
 
     &.btn-rounded{ border-radius: 30px; }
-    i{ width: 14px; }
+    i{
+      width: 14px;
+
+      &.float-right{ margin-left: $spacer; }
+      &.float-left{ margin-right: $spacer; }
+    }
   }
 
   &.btn-xs{
@@ -106,7 +115,12 @@
     padding-right: $spacer - 5px;
 
     &.btn-rounded{ border-radius: 24px; }
-    i{ width: 10px; }
+    i{
+      width: 10px;
+
+      &.float-right{ margin-left: $spacer - 5px; }
+      &.float-left{ margin-right: $spacer - 5px; }
+    }
   }
 }
 
