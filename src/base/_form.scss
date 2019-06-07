@@ -24,7 +24,6 @@
 .form-input{
   width: 100%;
   color: $dark;
-  height: 40px;
   border: none;
   font-size: 14px;
   font-weight: 500;
@@ -108,18 +107,18 @@
   }
 }
 
-.input-wrap{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  align-items: stretch;
-}
-
 textarea.form-input{
   resize: vertical;
   min-height: 40px;
   padding-top: 10px;
   font-family: inherit;
   padding-bottom: 10px;
+}
+
+.input-wrap{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: stretch;
 }
