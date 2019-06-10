@@ -1,28 +1,24 @@
 .card{
   display: block;
+}
 
-  .card-header{
-    padding: 5px;
-    display: flex;
+.card-header{
+  padding: 5px;
+  display: flex;
 
-    .btn{
-      min-width: 30px;
-      font-size: 14px;
-      line-height: 30px;
-      padding-left: $spacer;
-      padding-right: $spacer;
-    }
+  .btn{
+    min-width: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: $spacer;
+    padding-right: $spacer;
   }
+}
 
-  .card-media{
-    display: block;
-  }
+.card-media{
+  display: block;
+}
 
-  .card-body{
-    padding: $spacer;
-  }
-
-  .card-list{}
-
-  .card-list{}
+.card-body{
+  padding: $spacer;
 }

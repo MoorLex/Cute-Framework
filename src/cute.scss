@@ -3,26 +3,19 @@
 @import "reboot";
 @import "breakpoints";
 
-@import "base/align";
-@import "base/background";
 @import "base/border";
 @import "base/button";
 @import "base/container";
 @import "base/cursor";
-@import "base/display";
 @import "base/flex";
 @import "base/float";
 @import "base/form";
 @import "base/grid";
 @import "base/layers";
 @import "base/opacity";
-@import "base/position";
 @import "base/ratio";
-@import "base/size";
-@import "base/spacing";
 @import "base/text";
 @import "base/typography";
-@import "base/visibility";
 
 @import "utilities/alert";
 @import "utilities/nav";
@@ -30,3 +23,11 @@
 @import "utilities/card";
 @import "utilities/overlay";
 @import "utilities/modal";
+
+@import "base/align";
+@import "base/size";
+@import "base/spacing";
+@import "base/visibility";
+@import "base/position";
+@import "base/display";
+@import "base/background";
