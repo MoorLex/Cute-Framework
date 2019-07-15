@@ -50,14 +50,14 @@ $sizes: (
 @include media-target(w-screen) { width: 100vw; }
 @include media-target(h-screen) { height: 100vh; }
 
-.w-min-screen{ min-width: 100vw; }
-.h-min-screen{ min-height: 100vh; }
+.min-vw-100{ min-width: 100vw; }
+.min-vh-100{ min-height: 100vh; }
 
-@include media-target(w-min-screen) { min-width: 100vw; }
-@include media-target(h-min-screen) { min-height: 100vh; }
+@include media-target(min-vw-100) { min-width: 100vw; }
+@include media-target(min-vh-100) { min-height: 100vh; }
 
-.w-contain { max-width: 100%; }
-.h-contain { max-height: 100%; }
+.w-contain, .mw-100 { max-width: 100%; }
+.h-contain, .mh-100 { max-height: 100%; }
 
 .fill-parent { width: 100%; height: 100%; }
 .fill-screen { width: 100vw; height: 100vh; }

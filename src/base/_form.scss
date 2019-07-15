@@ -2,37 +2,37 @@
   position: relative;
   margin-bottom: $spacer;
   background: transparent;
+}
 
-  .form-label{
-    display: block;
-    font-size: 14px;
-    transition: .3s;
-    font-weight: 600;
-  }
+.form-label{
+  display: block;
+  font-size: 14px;
+  transition: .3s;
+  font-weight: 600;
+  line-height: 24px;
+}
 
-  .form-help{
-    opacity: .5;
-    display: block;
-    font-size: 12px;
-    margin-top: 4px;
-    transition: .3s;
-    font-weight: 600;
-    text-align: right;
-  }
+.form-help{
+  opacity: .5;
+  display: block;
+  font-size: 12px;
+  transition: .3s;
+  font-weight: 600;
+  text-align: right;
 }
 
 .form-input{
   width: 100%;
-  color: $dark;
   border: none;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: unset;
-  border-radius: 4px;
+  border-radius: 0;
+  background: $white;
   padding-left: 15px;
   padding-right: 15px;
-  background: $lighter;
-  transition: color .3s, border .3s,  background .3s;
+  box-shadow: 0 0 0 transparent;
+  border-bottom: 2px solid $light;
+  transition: color .3s, border .3s, background .3s, box-shadow .3s;
 
   &:not(textarea){
     height: 40px;
@@ -40,70 +40,8 @@
 
   &:focus{
     outline: none;
-    background: #dedfe3;
-  }
-
-  &.bg-white{
-    color: $muted;
-    background: $white;
-
-    &:focus{
-      background: fade_out($white, .2);
-    }
-  }
-
-  &.bg-primary{
-    color: $primary;
-    background: fade_out($primary, .9);
-
-    &:focus{
-      background: fade_out($primary, .8);
-    }
-  }
-
-  &.bg-info{
-    color: $info;
-    background: fade_out($info, .9);
-
-    &:focus{
-      background: fade_out($info, .8);
-    }
-  }
-
-  &.bg-danger{
-    color: $danger;
-    background: fade_out($danger, .9);
-
-    &:focus{
-      background: fade_out($danger, .8);
-    }
-  }
-
-  &.bg-warning{
-    color: $warning;
-    background: fade_out($warning, .9);
-
-    &:focus{
-      background: fade_out($warning, .8);
-    }
-  }
-
-  &.bg-success{
-    color: $success;
-    background: fade_out($success, .9);
-
-    &:focus{
-      background: fade_out($success, .8);
-    }
-  }
-
-  &.bg-dark{
-    color: $lighter;
-    background: fade_out($dark, .2);
-
-    &:focus{
-      background: fade_out($dark, .3);
-    }
+    border-color: $light;
+    box-shadow: 0 10px 10px fade_out($light, .9);
   }
 }
 
@@ -121,4 +59,59 @@ textarea.form-input{
   flex-wrap: wrap;
   position: relative;
   align-items: stretch;
+}
+
+
+.form-primary{
+  border-color: $primary-light;
+
+  &:focus { border-color: $primary; box-shadow: 0 10px 10px fade_out($primary, .9); }
+}
+
+.form-warning{
+  border-color: $warning-light;
+
+  &:focus { border-color: $warning; box-shadow: 0 10px 10px fade_out($warning, .9); }
+}
+
+.form-success{
+  border-color: $success-light;
+
+  &:focus { border-color: $success; box-shadow: 0 10px 10px fade_out($success, .9); }
+}
+
+.form-info{
+  border-color: $info-light;
+
+  &:focus { border-color: $info; box-shadow: 0 10px 10px fade_out($info, .9); }
+}
+
+.form-danger{
+  border-color: $danger-light;
+
+  &:focus { border-color: $danger; box-shadow: 0 10px 10px fade_out($danger, .9); }
+}
+
+.form-light{
+  border-color: $light;
+
+  &:focus { border-color: $lighter; box-shadow: 0 10px 10px fade_out($light, .9); }
+}
+
+.form-muted{
+  border-color: $muted;
+
+  &:focus { border-color: $muted; box-shadow: 0 10px 10px fade_out($muted, .9); }
+}
+
+.form-dark{
+  border-color: $dark;
+
+  &:focus { border-color: $darker; box-shadow: 0 10px 10px fade_out($dark, .9); }
+}
+
+.form-white{
+  border-color: $white;
+
+  &:focus { border-color: $white; box-shadow: 0 10px 10px fade_out($white, .9); }
 }

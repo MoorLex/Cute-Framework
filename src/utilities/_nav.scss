@@ -1,44 +1,44 @@
 .nav{
   display: flex;
+}
 
-  .nav-link, .nav-text{
-    border: none;
-    max-width: 100%;
-    min-width: 40px;
-    transition: .3s;
-    box-shadow: none;
-    line-height: 40px;
-    font-size: inherit;
-    white-space: nowrap;
-    font-family: inherit;
-    letter-spacing: .5px;
+.nav-link, .nav-text{
+  border: none;
+  max-width: 100%;
+  min-width: 40px;
+  transition: .3s;
+  box-shadow: none;
+  line-height: 40px;
+  font-size: inherit;
+  white-space: nowrap;
+  font-family: inherit;
+  letter-spacing: .5px;
+  display: inline-block;
+  padding-left: $spacer;
+  vertical-align: unset;
+  padding-right: $spacer;
+
+  [class*="i-"]{
+    width: 15px;
+    font-size: 15px;
+    text-align: center;
+    line-height: unset;
     display: inline-block;
-    padding-left: $spacer;
-    vertical-align: unset;
-    padding-right: $spacer;
 
-    [class*="i-"]{
-      width: 15px;
-      font-size: 15px;
-      text-align: center;
-      line-height: unset;
-      display: inline-block;
+    &.float-right{
+      margin-left: $spacer;
+    }
 
-      &.float-right{
-        margin-left: $spacer;
-      }
-
-      &:not(.float-right){
-        float: left;
-        margin-right: $spacer;
-      }
+    &:not(.float-right){
+      float: left;
+      margin-right: $spacer;
     }
   }
+}
 
-  .nav-link{
-    cursor: pointer;
-    user-select: none;
-  }
+.nav-link{
+  cursor: pointer;
+  user-select: none;
 }
 
 $colors: (
@@ -56,69 +56,11 @@ $colors: (
 );
 
 @each $color, $value in $colors {
-
-  .nav .nav-link.text-#{$color} {
+  .nav-link.text-#{$color} {
     &:hover, &:focus { color: darken($value, 10%); }
   }
 }
 
-.nav .nav-link.text-muted {
+.nav-link.text-muted {
   &:hover, &:focus { opacity: .9; }
-}
-
-.nav .nav-link{
-
-  &.bg-primary{
-    color: fade_out(#fff, .1);
-
-    &:hover, &:focus { color: #fff; background: $blue-dark; }
-  }
-
-  &.bg-warning{
-    color: fade_out(#fff, .1);
-
-    &:hover, &:focus { color: #fff; background: $yellow-dark; }
-  }
-
-  &.bg-success{
-    color: fade_out(#fff, .1);
-
-    &:hover, &:focus { color: #fff; background: $green-dark; }
-  }
-
-  &.bg-info{
-    color: fade_out(#fff, .1);
-
-    &:hover, &:focus { color: #fff; background: $cyan-dark; }
-  }
-
-  &.bg-danger{
-    color: fade_out(#fff, .1);
-
-    &:hover, &:focus { color: #fff; background: $red-dark; }
-  }
-
-  &.bg-light{
-    color: fade_out(#3e3e3e, .1);
-
-    &:hover, &:focus { color: #3e3e3e; background: #dedfe3; }
-  }
-
-  &.bg-muted{
-    color: fade_out(#fff, .1);
-
-    &:hover, &:focus { color: #fff; background: #636b72; }
-  }
-
-  &.bg-dark{
-    color: fade_out(#fff, .1);
-
-    &:hover, &:focus { color: #fff; background: #4f5a68; }
-  }
-
-  &.bg-white{
-    color: fade_out(#3e3e3e, .1);
-
-    &:hover, &:focus { color: #3e3e3e; background: $lighter; }
-  }
 }

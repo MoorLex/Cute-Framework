@@ -30,24 +30,6 @@
     color: $black;
   }
 
-  &.btn-rounded{
-    border-radius: 40px;
-  }
-
-  &.disabled, &[disabled]{
-    pointer-events: none;
-
-    &:after{
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: '';
-      position: absolute;
-      background: fade_out($white, .5);
-    }
-  }
-
   i{
     width: 16px;
     text-align: center;
@@ -65,176 +47,165 @@
   }
 }
 
+.btn-rounded{ border-radius: 50px; }
+
 //
 // Button sizes
 
-.btn{
+.btn-lg{
+  height: 50px;
+  min-width: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  padding-left: $spacer + 5px;
+  padding-right: $spacer + 5px;
 
-  &.btn-lg{
-    height: 50px;
-    min-width: 50px;
-    font-size: 16px;
-    line-height: 50px;
-    padding-left: $spacer + 5px;
-    padding-right: $spacer + 5px;
+  i{
+    width: 18px;
 
-    &.btn-rounded{ border-radius: 50px; }
-    i{
-      width: 18px;
-
-      &.float-right{ margin-left: $spacer + 5px; }
-      &.float-left{ margin-right: $spacer + 5px; }
-    }
+    &.float-right{ margin-left: $spacer + 5px; }
+    &.float-left{ margin-right: $spacer + 5px; }
   }
+}
 
-  &.btn-sm{
-    height: 30px;
-    min-width: 30px;
-    font-size: 12px;
-    line-height: 30px;
-    padding-left: $spacer;
-    padding-right: $spacer;
+.btn-sm{
+  height: 30px;
+  min-width: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  padding-left: $spacer;
+  padding-right: $spacer;
 
-    &.btn-rounded{ border-radius: 30px; }
-    i{
-      width: 14px;
+  i{
+    width: 14px;
 
-      &.float-right{ margin-left: $spacer; }
-      &.float-left{ margin-right: $spacer; }
-    }
+    &.float-right{ margin-left: $spacer; }
+    &.float-left{ margin-right: $spacer; }
   }
+}
 
-  &.btn-xs{
-    height: 24px;
-    min-width: 24px;
-    font-size: 10px;
-    line-height: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-left: $spacer - 5px;
-    padding-right: $spacer - 5px;
+.btn-xs{
+  height: 24px;
+  min-width: 24px;
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: $spacer - 5px;
+  padding-right: $spacer - 5px;
 
-    &.btn-rounded{ border-radius: 24px; }
-    i{
-      width: 10px;
+  i{
+    width: 10px;
 
-      &.float-right{ margin-left: $spacer - 5px; }
-      &.float-left{ margin-right: $spacer - 5px; }
-    }
+    &.float-right{ margin-left: $spacer - 5px; }
+    &.float-left{ margin-right: $spacer - 5px; }
   }
 }
 
 //
 // Button colors
 
+.btn-primary{
+  background: $primary;
+  color: fade_out($white, .1);
+
+  &:hover, &:focus { color: $white; background: $primary-dark; }
+  &:active { box-shadow: 0 0 10px fade_out($primary, .5); }
+}
+
+.btn-warning{
+  background: $warning;
+  color: fade_out($white, .1);
+
+  &:hover, &:focus { color: $white; background: $warning-dark; }
+  &:active { box-shadow: 0 0 10px fade_out($warning, .5); }
+}
+
+.btn-success{
+  background: $success;
+  color: fade_out($white, .1);
+
+  &:hover, &:focus { color: $white; background: $success-dark; }
+  &:active { box-shadow: 0 0 10px fade_out($success, .5); }
+}
+
+.btn-info{
+  background: $info;
+  color: fade_out($white, .1);
+
+  &:hover, &:focus { color: $white; background: $info-dark; }
+  &:active { box-shadow: 0 0 10px fade_out($info, .5); }
+}
+
+.btn-danger{
+  background: $danger;
+  color: fade_out($white, .1);
+
+  &:hover, &:focus { color: $white; background: $danger-dark; }
+  &:active { box-shadow: 0 0 10px fade_out($danger, .5); }
+}
+
+.btn-light{
+  background: $lighter;
+  color: fade_out($dark, .1);
+
+  &:hover, &:focus { color: $dark; background: $light; }
+  &:active { box-shadow: 0 0 10px fade_out($lighter, .5); }
+}
+
+.btn-muted{
+  background: $muted;
+  color: fade_out($white, .1);
+
+  &:hover, &:focus { color: $white; background: #636b72; }
+  &:active { box-shadow: 0 0 10px fade_out($muted, .5); }
+}
+
+.btn-dark{
+  background: $dark;
+  color: fade_out($white, .1);
+
+  &:hover, &:focus { color: $white; background: $darker; }
+  &:active { box-shadow: 0 0 10px fade_out($dark, .5); }
+}
+
+.btn-white{
+  background: $white;
+  color: fade_out($dark, .1);
+
+  &:hover, &:focus { color: $dark; background: $lighter; }
+  &:active { box-shadow: 0 0 10px fade_out($white, .5); }
+}
+
+// --------------------------------------------------------------------
+
 .btn{
 
   &.text-primary{
-    color: $primary;
-
     &:hover, &:focus { color: $primary-dark }
   }
 
   &.text-warning{
-    color: $warning;
-
     &:hover, &:focus { color: $warning-dark; }
   }
 
   &.text-success{
-    color: $success;
-
     &:hover, &:focus { color: $success-dark; }
   }
 
   &.text-info{
-    color: $info;
-
     &:hover, &:focus { color: $info-dark; }
   }
 
   &.text-danger{
-    color: $danger;
-
     &:hover, &:focus { color: $danger-dark; }
   }
 
   &.text-light{
-    color: $lighter;
-
     &:hover, &:focus { color: $light; }
   }
 
   &.text-dark{
-    color: $dark;
-
     &:hover, &:focus { color: $darker; }
   }
 }
-
-.btn{
-
-  &.bg-primary{
-    background: $primary;
-    color: fade_out($white, .1);
-
-    &:hover, &:focus { color: $white; background: $primary-dark; }
-  }
-
-  &.bg-warning{
-    background: $warning;
-    color: fade_out($white, .1);
-
-    &:hover, &:focus { color: $white; background: $warning-dark; }
-  }
-
-  &.bg-success{
-    background: $success;
-    color: fade_out($white, .1);
-
-    &:hover, &:focus { color: $white; background: $success-dark; }
-  }
-
-  &.bg-info{
-    background: $info;
-    color: fade_out($white, .1);
-
-    &:hover, &:focus { color: $white; background: $info-dark; }
-  }
-
-  &.bg-danger{
-    background: $danger;
-    color: fade_out($white, .1);
-
-    &:hover, &:focus { color: $white; background: $danger-dark; }
-  }
-
-  &.bg-light{
-    background: $lighter;
-    color: fade_out($dark, .1);
-
-    &:hover, &:focus { color: $dark; background: $light; }
-  }
-
-  &.bg-muted{
-    background: $muted;
-    color: fade_out($white, .1);
-
-    &:hover, &:focus { color: $white; background: #636b72; }
-  }
-
-  &.bg-dark{
-    background: $dark;
-    color: fade_out($white, .1);
-
-    &:hover, &:focus { color: $white; background: $darker; }
-  }
-
-  &.bg-white{
-    background: $white;
-    color: fade_out($dark, .1);
-
-    &:hover, &:focus { color: $dark; background: $lighter; }
-  }
-}
-

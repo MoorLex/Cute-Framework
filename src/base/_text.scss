@@ -88,8 +88,3 @@ a.text-black {
 a.text-muted{
   &:hover, &:focus { opacity: .9 }
 }
-
-.text-hide { color: transparent !important; }
-
-.no-select { user-select: none; }
-

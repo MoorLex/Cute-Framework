@@ -4,60 +4,60 @@
   margin-bottom: $spacer;
   background: fade_out($dark, .9);
   border-bottom: 3px solid fade_out($dark, .8);
+}
 
-  .alert-header{
-    display: flex;
-  }
+.alert-header{
+  display: flex;
+}
 
-  .alert-body{
-    padding: $spacer;
-  }
+.alert-body{
+  padding: $spacer;
+}
 
-  &.bg-muted{
-    color: $muted;
-    background: fade_out($muted, .9);
-    border-color: fade_out($muted, .8);
-  }
+.alert-muted{
+  color: $muted;
+  background: fade_out($muted, .9);
+  border-color: fade_out($muted, .8);
+}
 
-  &.bg-primary{
-    color: $primary;
-    background: fade_out($primary, .9);
-    border-color: fade_out($primary, .8);
-  }
+.alert-primary{
+  color: $primary;
+  background: fade_out($primary, .9);
+  border-color: fade_out($primary, .8);
+}
 
-  &.bg-info{
-    color: $info;
-    background: fade_out($info, .9);
-    border-color: fade_out($info, .8);
-  }
+.alert-info{
+  color: $info;
+  background: fade_out($info, .9);
+  border-color: fade_out($info, .8);
+}
 
-  &.bg-danger{
-    color: $danger;
-    background: fade_out($danger, .9);
-    border-color: fade_out($danger, .8);
-  }
+.alert-danger{
+  color: $danger;
+  background: fade_out($danger, .9);
+  border-color: fade_out($danger, .8);
+}
 
-  &.bg-warning{
-    color: $warning;
-    background: fade_out($warning, .9);
-    border-color: fade_out($warning, .8);
-  }
+.alert-warning{
+  color: $warning;
+  background: fade_out($warning, .9);
+  border-color: fade_out($warning, .8);
+}
 
-  &.bg-success{
-    color: $success;
-    background: fade_out($success, .9);
-    border-color: fade_out($success, .8);
-  }
+.alert-success{
+  color: $success;
+  background: fade_out($success, .9);
+  border-color: fade_out($success, .8);
+}
 
-  &.bg-white{
-    color: $lighter;
-    background: fade_out($white, .9);
-    border-color: fade_out($white, .8);
-  }
+.alert-white{
+  color: $lighter;
+  background: fade_out($white, .9);
+  border-color: fade_out($white, .8);
+}
 
-  &.bg-dark{
-    color: $lighter;
-    background: fade_out($dark, .2);
-    border-color: fade_out($lighter, .8);
-  }
+.alert-dark{
+  color: $lighter;
+  background: fade_out($dark, .2);
+  border-color: fade_out($lighter, .8);
 }

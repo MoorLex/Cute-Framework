@@ -16,10 +16,7 @@ b, strong, .strong, .font-bold{
   font-weight: bold;
 }
 
-.font-lighter{ font-weight: lighter; }
-.font-normal{ font-weight: normal; }
-
-em, .em .italic{
+em, .em .italic, .font-italic{
   font-style: italic;
 }
 
@@ -94,7 +91,7 @@ a{
   }
 }
 
-p{ margin-bottom: 1rem; }
+p{ display: block; margin-bottom: 1rem; }
 .lead{ font-size: 1.125em; }
 
 small, .small{

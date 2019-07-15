@@ -2,24 +2,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  &.no-gutters{
-    .col, [class*="col-"] {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-
-  .col, [class*="col-"]{
-    width: 100%;
-    flex-grow: 1;
-    flex-basis: 0;
-    max-width: 100%;
-    min-height: 1px;
-    position: relative;
-    padding-left: $spacer;
-    padding-right: $spacer;
-  }
-
   .order-first{ order: -1;}
   .order-last{ order: $grid-columns + 1;}
 
@@ -44,9 +26,27 @@
   }
 }
 
+.no-gutters{
+  .col, [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .container, .container-fluid {
   .row{
     margin-left: -$spacer;
     margin-right: -$spacer;
   }
+}
+
+.col, [class*="col-"]{
+  width: 100%;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  min-height: 1px;
+  position: relative;
+  padding-left: $spacer;
+  padding-right: $spacer;
 }

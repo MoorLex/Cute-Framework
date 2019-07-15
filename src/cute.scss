@@ -3,6 +3,13 @@
 @import "reboot";
 @import "breakpoints";
 
+@import "utilities/alert";
+@import "utilities/nav";
+@import "utilities/navbar";
+@import "utilities/card";
+@import "utilities/overlay";
+@import "utilities/modal";
+
 @import "base/border";
 @import "base/button";
 @import "base/container";
@@ -16,13 +23,7 @@
 @import "base/ratio";
 @import "base/text";
 @import "base/typography";
-
-@import "utilities/alert";
-@import "utilities/nav";
-@import "utilities/navbar";
-@import "utilities/card";
-@import "utilities/overlay";
-@import "utilities/modal";
+@import "base/weight";
 
 @import "base/align";
 @import "base/size";
@@ -31,3 +32,7 @@
 @import "base/position";
 @import "base/display";
 @import "base/background";
+
+
+.text-hide { color: transparent; }
+.no-select { user-select: none; }

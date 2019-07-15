@@ -5,9 +5,28 @@
   .container, .container-fluid{
     display: inherit;
     align-items: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
   }
 }
 
 .navbar-group{
   display: flex;
+}
+
+.navbar-label{
+  display: flex;
+  line-height: 24px;
+  position: relative;
+
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.navbar-avatar{
+  width: 48px;
+  height: 48px;
+  position: relative;
 }
