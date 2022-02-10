@@ -38,6 +38,6 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-strip-css-comments": "^2.0.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
